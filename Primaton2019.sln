@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "G1", "G1\G1.csproj", "{678A11E6-5D37-4064-BF7E-4154C08801FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agroAPP3.0", "..\agroAPP3.0\agroAPP3.0\agroAPP3.0.csproj", "{B189D34C-1D48-4AA3-ADBB-CE003355A59E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "agroAPP3.0", "agroAPP\agroAPP3.0\agroAPP3.0.csproj", "{B189D34C-1D48-4AA3-ADBB-CE003355A59E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
