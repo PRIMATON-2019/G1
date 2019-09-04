@@ -46,13 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Alerta.cs" />
+    <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
-    <Compile Include="Clases\Localidad.cs" />
-    <Compile Include="Clases\Pais.cs" />
-    <Compile Include="Clases\Persona.cs" />
-    <Compile Include="Clases\Provincia.cs" />
-    <Compile Include="Clases\Usuario.cs" />
+    <Compile Include="Clases\Modelos\Localidad.cs" />
+    <Compile Include="Clases\Modelos\Pais.cs" />
+    <Compile Include="Clases\Modelos\Persona.cs" />
+    <Compile Include="Clases\Modelos\Producto.cs" />
+    <Compile Include="Clases\Modelos\Provincia.cs" />
+    <Compile Include="Clases\Modelos\Usuario.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
