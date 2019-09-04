@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using agroAPP3._0.Formularios;
+using System;
 using System.Runtime.InteropServices;
-
+using System.Windows.Forms;
 
 namespace agroAPP3._0
 {
@@ -22,7 +15,7 @@ namespace agroAPP3._0
         private void Btncerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            ;
+
         }
 
         private void BtnMaximizar_Click(object sender, EventArgs e)
@@ -60,7 +53,11 @@ namespace agroAPP3._0
 
         private void BtnSeguimiento_Click(object sender, EventArgs e)
         {
-            btnSeguimiento.Visible = true;
+            //btnSeguimiento.Visible = true;
+            Form_Seguimiento formSeguimiento = new Form_Seguimiento();
+            formSeguimiento.ShowDialog();
+
+
         }
 
         private void Btnopcion1_Click(object sender, EventArgs e)
@@ -76,6 +73,11 @@ namespace agroAPP3._0
         private void Btnopcion3_Click(object sender, EventArgs e)
         {
             btnSeguimiento.Visible = false;
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            ABM_Semillas form_semillas = new ABM_Semillas();
         }
     }
 }
