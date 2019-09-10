@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -93,9 +93,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Clases\Lista.cs" />
+    <Compile Include="Clases\Modelos\Alerta.cs" />
+    <Compile Include="Clases\Modelos\Localidad.cs" />
+    <Compile Include="Clases\Modelos\Pais.cs" />
+    <Compile Include="Clases\Modelos\Persona.cs" />
+    <Compile Include="Clases\Modelos\Producto.cs" />
+    <Compile Include="Clases\Modelos\Provincia.cs" />
+    <Compile Include="Clases\Modelos\Usuario.cs" />
+    <Compile Include="Clases\ListaObjetos.cs" />
+    <Compile Include="Clases\Modelos\Alumnos.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
