@@ -48,22 +48,41 @@
   <ItemGroup>
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
+    <Compile Include="Clases\Modelos\Alumnos.cs" />
     <Compile Include="Clases\Modelos\Localidad.cs" />
     <Compile Include="Clases\Modelos\Pais.cs" />
     <Compile Include="Clases\Modelos\Persona.cs" />
     <Compile Include="Clases\Modelos\Producto.cs" />
     <Compile Include="Clases\Modelos\Provincia.cs" />
     <Compile Include="Clases\Modelos\Usuario.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Formularios\ABM_Semillas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\ABM_Semillas.Designer.cs">
+      <DependentUpon>ABM_Semillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form_Seguimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form_Seguimiento.Designer.cs">
+      <DependentUpon>Form_Seguimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuInicial.Designer.cs">
+      <DependentUpon>MenuInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
+      <DependentUpon>ABM_Semillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form_Seguimiento.resx">
+      <DependentUpon>Form_Seguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuInicial.resx">
+      <DependentUpon>MenuInicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,8 +106,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
