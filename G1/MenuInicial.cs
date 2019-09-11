@@ -77,7 +77,30 @@ namespace G1
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            
             ABM_Semillas form_semillas = new ABM_Semillas();
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void MenuInicial_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            ucAlarmas1.Visible = true;
+            ucCalendario2.Visible = false;
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            ucAlarmas1.Visible = false;
+            ucCalendario2.Visible = true;
         }
     }
 }
