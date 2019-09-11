@@ -55,6 +55,7 @@
     <Compile Include="Clases\Modelos\Producto.cs" />
     <Compile Include="Clases\Modelos\Provincia.cs" />
     <Compile Include="Clases\Modelos\Usuario.cs" />
+    <Compile Include="Clases\Persistencia.cs" />
     <Compile Include="Formularios\ABM_Semillas.cs">
       <SubType>Form</SubType>
     </Compile>
