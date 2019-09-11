@@ -59,8 +59,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.ucAlarmas1 = new G1.ucAlarmas();
             this.ucCalendario2 = new G1.ucCalendario();
+            this.ucAlarmas1 = new G1.ucAlarmas();
             this.panelArriba.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -431,6 +431,15 @@
             this.panelPrincipal.Size = new System.Drawing.Size(928, 573);
             this.panelPrincipal.TabIndex = 2;
             // 
+            // ucCalendario2
+            // 
+            this.ucCalendario2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucCalendario2.Location = new System.Drawing.Point(0, 0);
+            this.ucCalendario2.Name = "ucCalendario2";
+            this.ucCalendario2.Size = new System.Drawing.Size(928, 573);
+            this.ucCalendario2.TabIndex = 2;
+            this.ucCalendario2.Load += new System.EventHandler(this.UcCalendario2_Load);
+            // 
             // ucAlarmas1
             // 
             this.ucAlarmas1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -440,14 +449,6 @@
             this.ucAlarmas1.Size = new System.Drawing.Size(928, 573);
             this.ucAlarmas1.TabIndex = 1;
             this.ucAlarmas1.Visible = false;
-            // 
-            // ucCalendario2
-            // 
-            this.ucCalendario2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucCalendario2.Location = new System.Drawing.Point(0, 0);
-            this.ucCalendario2.Name = "ucCalendario2";
-            this.ucCalendario2.Size = new System.Drawing.Size(928, 573);
-            this.ucCalendario2.TabIndex = 2;
             // 
             // MenuInicial
             // 
@@ -459,8 +460,8 @@
             this.Controls.Add(this.panelArriba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuInicial";
-            this.Opacity = 0.9D;
             this.Text = "Form1";
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.MenuInicial_Load);
             this.panelArriba.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

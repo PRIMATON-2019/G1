@@ -102,5 +102,10 @@ namespace G1
             ucAlarmas1.Visible = false;
             ucCalendario2.Visible = true;
         }
+
+        private void UcCalendario2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
