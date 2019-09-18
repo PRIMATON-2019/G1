@@ -76,24 +76,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ucAlarmas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucAlarmas.Designer.cs">
-      <DependentUpon>ucAlarmas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucCalendario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucCalendario.Designer.cs">
-      <DependentUpon>ucCalendario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ucSemillas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucSemillas.Designer.cs">
-      <DependentUpon>ucSemillas.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,15 +94,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ucAlarmas.resx">
-      <DependentUpon>ucAlarmas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucCalendario.resx">
-      <DependentUpon>ucCalendario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucSemillas.resx">
-      <DependentUpon>ucSemillas.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
