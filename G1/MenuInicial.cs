@@ -93,14 +93,12 @@ namespace G1
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            ucAlarmas1.Visible = true;
-            ucCalendario2.Visible = false;
+       
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            ucAlarmas1.Visible = false;
-            ucCalendario2.Visible = true;
+           
         }
 
         private void UcCalendario2_Load(object sender, EventArgs e)

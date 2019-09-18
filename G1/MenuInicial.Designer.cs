@@ -59,8 +59,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
-            this.ucCalendario2 = new G1.ucCalendario();
-            this.ucAlarmas1 = new G1.ucAlarmas();
             this.panelArriba.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -423,8 +421,7 @@
             // panelPrincipal
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panelPrincipal.Controls.Add(this.ucCalendario2);
-            this.panelPrincipal.Controls.Add(this.ucAlarmas1);
+
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(172, 47);
             this.panelPrincipal.Name = "panelPrincipal";
@@ -433,22 +430,8 @@
             // 
             // ucCalendario2
             // 
-            this.ucCalendario2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucCalendario2.Location = new System.Drawing.Point(0, 0);
-            this.ucCalendario2.Name = "ucCalendario2";
-            this.ucCalendario2.Size = new System.Drawing.Size(928, 573);
-            this.ucCalendario2.TabIndex = 2;
-            this.ucCalendario2.Load += new System.EventHandler(this.UcCalendario2_Load);
-            // 
-            // ucAlarmas1
-            // 
-            this.ucAlarmas1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.ucAlarmas1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucAlarmas1.Location = new System.Drawing.Point(0, 0);
-            this.ucAlarmas1.Name = "ucAlarmas1";
-            this.ucAlarmas1.Size = new System.Drawing.Size(928, 573);
-            this.ucAlarmas1.TabIndex = 1;
-            this.ucAlarmas1.Visible = false;
+            
+           
             // 
             // MenuInicial
             // 
@@ -512,8 +495,7 @@
         private System.Windows.Forms.Button btnopcion3;
         private System.Windows.Forms.Button btnopcion2;
         private System.Windows.Forms.Button btnopcion1;
-        private ucAlarmas ucAlarmas1;
-        private ucCalendario ucCalendario2;
+        
     }
 }
 
