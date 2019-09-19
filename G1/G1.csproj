@@ -62,10 +62,12 @@
     <Compile Include="Formularios\ABM_Semillas.Designer.cs">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Formularios\Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs" />
+    <Compile Include="Formularios\Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form_Seguimiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,7 +85,9 @@
     <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx" />
+    <EmbeddedResource Include="Formularios\Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Seguimiento.resx">
       <DependentUpon>Form_Seguimiento.cs</DependentUpon>
     </EmbeddedResource>
