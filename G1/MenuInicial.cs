@@ -83,7 +83,7 @@ namespace G1
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
 
         private void MenuInicial_Load(object sender, EventArgs e)

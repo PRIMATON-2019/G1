@@ -47,6 +47,11 @@ namespace G1.Formularios
             if (txtCorreo.Text!="" && txtClave.Text!="")
             {
                 //Leer archivo de DB, buscar usuario y comprobar clave
+                MenuInicial mi = new MenuInicial();
+                mi.Show();
+                this.Dispose();
+              
+
             }
 
         }
