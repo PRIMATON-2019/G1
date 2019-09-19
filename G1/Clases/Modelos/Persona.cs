@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace G1.Clases
+namespace G1.Clases.Modelos
 {
     public class Persona
     {
@@ -16,6 +16,7 @@ namespace G1.Clases
         public string Telefono { get; set; }
         public string Celular { get; set; }
         public string Correo { get; set; }
+        public int Genero { get; set; }
 
 
     }

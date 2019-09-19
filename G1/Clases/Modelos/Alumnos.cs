@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace agroAPP3
+namespace G1.Clases.Modelos
 {
     public class Alumnos
     {

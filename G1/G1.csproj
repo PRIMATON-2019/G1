@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Internacionalizacion.cs" />
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
     <Compile Include="Clases\Modelos\Alumnos.cs" />
@@ -62,6 +63,12 @@
     <Compile Include="Formularios\ABM_Semillas.Designer.cs">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\AltaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaUsuarios.Designer.cs">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +81,12 @@
     <Compile Include="Formularios\Form_Seguimiento.Designer.cs">
       <DependentUpon>Form_Seguimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +98,17 @@
     <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaUsuarios.resx">
+      <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form_Seguimiento.resx">
       <DependentUpon>Form_Seguimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuInicial.resx">
       <DependentUpon>MenuInicial.cs</DependentUpon>

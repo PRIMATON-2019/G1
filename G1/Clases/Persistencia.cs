@@ -1,41 +1,50 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 
 namespace G1.Clases
 {
-    class Persistencia
+    public class Persistencia
     {
         #region Propiedades
-        private const string NombreArchivo = @"registros.xml";
-        public DataTable Tabla = new DataTable("Registros");
+        public DataTable Tabla;
+        public string NombreArchivo;
+        #endregion
 
-        public Persistencia()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cantColumnas">Numero de columnas en la tabla</param>
+        /// <param name="columnas">Encabezados de la tabla. Debe coincidir con la cantidad en cantColumnas</param>
+        /// <param name="nombreArchivo">Nombre del archivo a guardar, sin extension.</param>
+        public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
-            ConfiguracionInicial();
-
+            NombreArchivo = nombreArchivo;
+            Tabla = new DataTable(NombreArchivo);
+            ConfiguracionInicial(cantColumnas, columnas);
         }
-        private void ConfiguracionInicial()
+
+        
+        private void ConfiguracionInicial(int cantColumnas, string[] columnas)
         {
-            // diseño de la Tabla
-            Tabla.Columns.Add("Id");
-            //Tabla.Columns.Add("Fecha");
-            //Tabla.Columns.Add("Usuario");
-            //Tabla.Columns.Add("Tipo Residuo");
-            //Tabla.Columns.Add("Cantidad");
-            //Tabla.Columns.Add("Contenedor");
-            //Tabla.Columns.Add("Ticket");
-            //Tabla.Columns.Add("Tipo Registro");
+            // Diseñamos la Tabla 
+            for (int i = 0; i < cantColumnas; i++)
+            {
+                Tabla.Columns.Add(columnas[i]);
+            }
 
             // busca si el archivo ya existe para precargar sus datos
-            if (System.IO.File.Exists(NombreArchivo))
+            if (System.IO.File.Exists(NombreArchivo + ".xml"))
             {
-                Tabla.ReadXml(NombreArchivo);
+                Tabla.ReadXml(NombreArchivo + ".xml");
             }
         }
 
+        /// <summary>
+        /// Graba el archivo XML a disco.
+        /// </summary>
+        /// <param name="NombreArchivo">Nombre de Archivo, sin extension</param>
         public void GrabarArchivo()
         {
-            Tabla.WriteXml(NombreArchivo);
+            Tabla.WriteXml(NombreArchivo + ".xml");
         }
 
         // Llena con string vacio los texbox
@@ -44,18 +53,15 @@ namespace G1.Clases
         /// <summary>
         /// Rellena las columnas del último registro agregado con los valores del textbox correspondiente
         /// </summary>
-        public void LlenaRegistroTabla(Object registro)// pasamos un objeto " registro "
+        public void CargaDatos(string[] datos, int cantColumnas, string[] columnas)// pasamos un objeto " registro "
         {
-            //TablaPersona.Rows.Add();
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Id"] = registro.Id; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Fecha"] = registro.Fecha; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Usuario"] = registro.Usuario; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Tipo Residuo"] = registro.Tipo; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Cantidad"] = registro.Cantidad; //despues lo utilizamos aca
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Contenedor"] = registro.Contenedor;
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Ticket"] = registro.Ticket;
-            //TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Tipo Registro"] = registro.TipodeRegistro;
+            Tabla.Rows.Add();
+            for (int i = 0; i < cantColumnas; i++)
+            {
+                Tabla.Rows[Tabla.Rows.Count - 1][columnas[i]] = datos[i]; //despues lo utilizamos aca
+            }
+            GrabarArchivo();
         }
-        #endregion
+
     }
 }
