@@ -46,7 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Modelos\Arboles.cs" />
+    <Compile Include="Clases\Modelos\Empresas.cs" />
+    <Compile Include="Clases\Modelos\Flores.cs" />
+    <Compile Include="Clases\Modelos\Frutas.cs" />
     <Compile Include="Clases\Internacionalizacion.cs" />
+    <Compile Include="Clases\ListaObjetos.cs" />
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
     <Compile Include="Clases\Modelos\Alumnos.cs" />
@@ -57,6 +62,10 @@
     <Compile Include="Clases\Modelos\Provincia.cs" />
     <Compile Include="Clases\Modelos\Usuario.cs" />
     <Compile Include="Clases\Persistencia.cs" />
+    <Compile Include="Clases\Modelos\Pesticidas.cs" />
+    <Compile Include="Clases\Modelos\Plagas.cs" />
+    <Compile Include="Clases\Modelos\Semillas.cs" />
+    <Compile Include="Clases\Modelos\Verduras.cs" />
     <Compile Include="Formularios\ABM_Semillas.cs">
       <SubType>Form</SubType>
     </Compile>
