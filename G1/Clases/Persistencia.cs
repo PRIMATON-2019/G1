@@ -68,23 +68,20 @@ namespace G1.Clases
             }
         }
 
-        public string[,] BuscarDatos(string[] datos, string nombreArchivo)
+        public DataSet BuscarDatos(string nombreArchivo)
         {
             DataSet ds = new DataSet();
             ds.ReadXml(nombreArchivo + ".xml");
+            return ds;
 
-
-            string[,] conjunto = new string[ds.Tables[0].Rows.Count, ds.Tables[0].Columns.Count];
-
-            for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
-            {
-                for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
-                {
-                    conjunto[j,i] = ds.Tables[0].Rows[j][i].ToString();
-                }
-
-            }
-            return conjunto;
+            //string[,] conjunto = new string[ds.Tables[0].Rows.Count, ds.Tables[0].Columns.Count];
+            //for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
+            //{
+            //    for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
+            //    {
+            //        conjunto[j,i] = ds.Tables[0].Rows[j][i].ToString();
+            //    }
+            //}
         }
     }
 }

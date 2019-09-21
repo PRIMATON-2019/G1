@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbMasculino = new System.Windows.Forms.RadioButton();
-            this.rbNoBinario = new System.Windows.Forms.RadioButton();
-            this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
@@ -42,7 +38,6 @@
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblClave = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancelar
@@ -53,51 +48,6 @@
             this.btnCancelar.TabIndex = 42;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.rbMasculino);
-            this.groupBox1.Controls.Add(this.rbNoBinario);
-            this.groupBox1.Controls.Add(this.rbFemenino);
-            this.groupBox1.Location = new System.Drawing.Point(14, 101);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(255, 44);
-            this.groupBox1.TabIndex = 41;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Género";
-            // 
-            // rbMasculino
-            // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(93, 15);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rbMasculino.TabIndex = 2;
-            this.rbMasculino.TabStop = true;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseVisualStyleBackColor = true;
-            // 
-            // rbNoBinario
-            // 
-            this.rbNoBinario.AutoSize = true;
-            this.rbNoBinario.Location = new System.Drawing.Point(172, 15);
-            this.rbNoBinario.Name = "rbNoBinario";
-            this.rbNoBinario.Size = new System.Drawing.Size(73, 17);
-            this.rbNoBinario.TabIndex = 1;
-            this.rbNoBinario.TabStop = true;
-            this.rbNoBinario.Text = "No binario";
-            this.rbNoBinario.UseVisualStyleBackColor = true;
-            // 
-            // rbFemenino
-            // 
-            this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(16, 15);
-            this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
-            this.rbFemenino.TabIndex = 0;
-            this.rbFemenino.TabStop = true;
-            this.rbFemenino.Text = "Femenino";
-            this.rbFemenino.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -182,7 +132,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(446, 263);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtCorreo);
@@ -194,8 +143,6 @@
             this.Controls.Add(this.btnConfirmar);
             this.Name = "RecuperarClave";
             this.Text = "RecuperarClave";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,10 +151,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton rbMasculino;
-        private System.Windows.Forms.RadioButton rbNoBinario;
-        private System.Windows.Forms.RadioButton rbFemenino;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtCorreo;

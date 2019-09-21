@@ -60,7 +60,7 @@ namespace G1.Formularios
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(15, 165);
+            this.btnAceptar.Location = new System.Drawing.Point(15, 128);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(75, 23);
             this.btnAceptar.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace G1.Formularios
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(96, 165);
+            this.btnCancelar.Location = new System.Drawing.Point(96, 128);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace G1.Formularios
             // 
             // btni18n
             // 
-            this.btni18n.Location = new System.Drawing.Point(340, 165);
+            this.btni18n.Location = new System.Drawing.Point(268, 128);
             this.btni18n.Name = "btni18n";
             this.btni18n.Size = new System.Drawing.Size(75, 23);
             this.btni18n.TabIndex = 4;
@@ -92,6 +92,7 @@ namespace G1.Formularios
             // 
             this.txtClave.Location = new System.Drawing.Point(15, 79);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(328, 20);
             this.txtClave.TabIndex = 1;
             // 
@@ -130,7 +131,7 @@ namespace G1.Formularios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(448, 202);
+            this.ClientSize = new System.Drawing.Size(362, 158);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblRecuperarContrasena);
             this.Controls.Add(this.btni18n);

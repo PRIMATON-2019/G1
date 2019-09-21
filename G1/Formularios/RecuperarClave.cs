@@ -14,24 +14,30 @@ namespace G1.Formularios
 
         private void BtnConfirmar_Click(object sender, EventArgs e)
         {
-            if (txtCorreo.Text !="" && txtApellido.Text !="" && TxtNombre.Text !="")
+            if (txtCorreo.Text != "" && txtApellido.Text != "" && TxtNombre.Text != "")
             {
-                //Leer XML, buscar usuario y devolver clave.
+
                 Persistencia pd = new Persistencia();
-                string[] datos = new string[] { "usuario", "apellido", "nombre", "genero" };
-               
-                string[,] datosEncontrados = pd.BuscarDatos(datos, "usuarios");
-                if (txtCorreo.Text == datosEncontrados[0,0] 
-                    && txtApellido.Text == datosEncontrados[0,1] 
-                    && TxtNombre.Text == datosEncontrados[0,2])
+                DataSet ds = pd.BuscarDatos("usuarios");
+                for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
                 {
-                    lblClave.Text = datosEncontrados[0, 4];
+                    string user = ds.Tables[0].Rows[j][0].ToString();
+                    string apellido = ds.Tables[0].Rows[j][1].ToString();
+                    string nombre = ds.Tables[0].Rows[j][2].ToString();
+                    if (txtCorreo.Text.Equals(user)
+                        && txtApellido.Text.Equals(apellido)
+                        && TxtNombre.Text.Equals(nombre))
+                    {
+                        lblClave.Text = ds.Tables[0].Rows[j][4].ToString();
+                    }
                 }
             }
+
             else
             {
                 MessageBox.Show("Debe completar los campos");
             }
+
         }
     }
 }

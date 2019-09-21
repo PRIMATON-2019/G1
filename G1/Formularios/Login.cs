@@ -1,12 +1,6 @@
 ﻿using G1.Clases;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace G1.Formularios
@@ -44,16 +38,26 @@ namespace G1.Formularios
         private void BtnAceptar_Click(object sender, EventArgs e)
         {
             //Verificar usuario ingresado.
-            if (txtCorreo.Text!="" && txtClave.Text!="")
+            if (txtCorreo.Text != "" && txtClave.Text != "")
             {
-                //Leer archivo de DB, buscar usuario y comprobar clave
-                MenuInicial mi = new MenuInicial();
-                mi.Show();
-                this.Dispose();
-              
-
+                Persistencia pd = new Persistencia();
+                DataSet ds = pd.BuscarDatos("usuarios");
+                for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
+                {
+                    string user = ds.Tables[0].Rows[j][0].ToString();
+                    string pass = ds.Tables[0].Rows[j][4].ToString();
+                    if (txtCorreo.Text.Equals(user)
+                        && txtClave.Text.Equals(pass))
+                    {
+                        MenuInicial mi = new MenuInicial();
+                        mi.Show();
+                    }
+                }
             }
-
+            else
+            {
+                MessageBox.Show("Debe ingresar los datos");
+            }
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
@@ -76,5 +80,7 @@ namespace G1.Formularios
             AltaUsuarios altaUsuarios = new AltaUsuarios();
             altaUsuarios.ShowDialog();
         }
+
+      
     }
 }
