@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Modelos\DetalleEventos.cs" />
+    <Compile Include="Clases\Modelos\Eventos.cs" />
     <Compile Include="Clases\Modelos\Informacion.cs" />
     <Compile Include="Clases\Modelos\Empresas.cs" />
     <Compile Include="Clases\Modelos\Flores.cs" />

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using G1.Clases;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace G1.Formularios
@@ -16,5 +11,18 @@ namespace G1.Formularios
         {
             InitializeComponent();
         }
+
+        private void BtnNuevoEvento_Click(object sender, EventArgs e)
+        {
+            Persistencia pd = new Persistencia();
+            DataSet ds = pd.BuscarDatos("usuarios");
+            cbUsuarios.Items.Clear();
+            for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
+            {
+                cbUsuarios.Items.Add(ds.Tables[0].Rows[j][1].ToString() + ", "+ ds.Tables[0].Rows[j][2]);
+
+            }
+        }
     }
 }
+
