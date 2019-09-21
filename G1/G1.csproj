@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Modelos\Arboles.cs" />
+    <Compile Include="Clases\Modelos\Informacion.cs" />
     <Compile Include="Clases\Modelos\Empresas.cs" />
     <Compile Include="Clases\Modelos\Flores.cs" />
     <Compile Include="Clases\Modelos\Frutas.cs" />
@@ -96,6 +96,12 @@
     <Compile Include="Formularios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\RecuperarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RecuperarClave.Designer.cs">
+      <DependentUpon>RecuperarClave.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RecuperarClave.resx">
+      <DependentUpon>RecuperarClave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuInicial.resx">
       <DependentUpon>MenuInicial.cs</DependentUpon>

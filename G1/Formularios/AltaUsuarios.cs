@@ -51,10 +51,10 @@ namespace G1.Formularios
                 Persistencia db = new Persistencia(5, columnas, "Usuarios");
                 string[] datos = {
                     usuario.NombreUsuario,
-                    usuario.Clave,
                     usuario.Persona.Apellido,
                     usuario.Persona.Nombre,
-                    usuario.Persona.Genero.ToString()
+                    usuario.Persona.Genero.ToString(),
+                    usuario.Clave
                 };
                 db.CargaDatos(datos, 5, columnas);
              
@@ -64,5 +64,62 @@ namespace G1.Formularios
 
             }
         }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtClave_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtClaveConfirmacion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

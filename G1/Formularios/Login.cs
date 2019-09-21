@@ -67,7 +67,8 @@ namespace G1.Formularios
 
         private void LblRecuperarContrasena_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            RecuperarClave rc = new RecuperarClave();
+            rc.Visible = true;
         }
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

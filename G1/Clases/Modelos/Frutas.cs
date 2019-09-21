@@ -8,7 +8,8 @@ namespace G1.Clases.Modelos
 {
     class Frutas
     {
-        public String nombre { get; set; }
         public int id { get; set; }
+        public String nombre { get; set; }
+        public int tipo { get; set; }
     }
 }

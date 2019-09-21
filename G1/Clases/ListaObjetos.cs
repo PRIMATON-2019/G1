@@ -1,6 +1,7 @@
-﻿using System;
+﻿using G1.Clases.Modelos;
+using System;
 
-namespace agroAPP3
+namespace G1.Clases
 {
     public class ListaObjetos
 
@@ -158,7 +159,7 @@ namespace agroAPP3
             for (int i = 0; i < copia.Length; i++)
             {
                 Alumnos alumno = copia[i];
-                salida = salida + (alumno.Apellido + ", " + alumno.Nombre + ": " + alumno.Notas[0] + "\r\n");
+                salida += (alumno.Apellido + ", " + alumno.Nombre + ": " + alumno.Notas[0] + "\r\n");
             }
 
             return salida;

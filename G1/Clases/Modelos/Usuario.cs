@@ -6,13 +6,6 @@
         public string NombreUsuario { get; set; }
         public string Clave { get; set; }
         public Persona Persona { get; set; }
-        public int Rol { get; set; }
-
-
-        public Usuario()
-        {
-        //    Persona persona = new Persona();
-        }
-    }
+           }
   
 }

@@ -40,9 +40,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbFemenino = new System.Windows.Forms.RadioButton();
-            this.rbNoBinario = new System.Windows.Forms.RadioButton();
             this.rbMasculino = new System.Windows.Forms.RadioButton();
+            this.rbNoBinario = new System.Windows.Forms.RadioButton();
+            this.rbFemenino = new System.Windows.Forms.RadioButton();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +52,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(272, 163);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
-            this.btnConfirmar.TabIndex = 0;
+            this.btnConfirmar.TabIndex = 5;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.BtnConfirmar_Click);
@@ -62,7 +62,8 @@
             this.TxtNombre.Location = new System.Drawing.Point(12, 116);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(207, 20);
-            this.TxtNombre.TabIndex = 1;
+            this.TxtNombre.TabIndex = 3;
+            this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // label1
             // 
@@ -72,6 +73,7 @@
             this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -81,6 +83,7 @@
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Apellido";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -90,34 +93,39 @@
             this.label3.Size = new System.Drawing.Size(97, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Repetir contraseña";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // txtClaveConfirmacion
             // 
             this.txtClaveConfirmacion.Location = new System.Drawing.Point(215, 65);
             this.txtClaveConfirmacion.Name = "txtClaveConfirmacion";
             this.txtClaveConfirmacion.Size = new System.Drawing.Size(216, 20);
-            this.txtClaveConfirmacion.TabIndex = 16;
+            this.txtClaveConfirmacion.TabIndex = 2;
+            this.txtClaveConfirmacion.TextChanged += new System.EventHandler(this.TxtClaveConfirmacion_TextChanged);
             // 
             // txtClave
             // 
             this.txtClave.Location = new System.Drawing.Point(12, 65);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(197, 20);
-            this.txtClave.TabIndex = 20;
+            this.txtClave.TabIndex = 1;
+            this.txtClave.TextChanged += new System.EventHandler(this.TxtClave_TextChanged);
             // 
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(12, 26);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(419, 20);
-            this.txtCorreo.TabIndex = 21;
+            this.txtCorreo.TabIndex = 0;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.TxtCorreo_TextChanged);
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(225, 116);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(206, 20);
-            this.txtApellido.TabIndex = 22;
+            this.txtApellido.TabIndex = 4;
+            this.txtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
             // label10
             // 
@@ -127,6 +135,7 @@
             this.label10.Size = new System.Drawing.Size(61, 13);
             this.label10.TabIndex = 24;
             this.label10.Text = "Contraseña";
+            this.label10.Click += new System.EventHandler(this.Label10_Click);
             // 
             // label11
             // 
@@ -136,6 +145,7 @@
             this.label11.Size = new System.Drawing.Size(94, 13);
             this.label11.TabIndex = 25;
             this.label11.Text = "Correo Electrónico";
+            this.label11.Click += new System.EventHandler(this.Label11_Click);
             // 
             // groupBox1
             // 
@@ -148,17 +158,18 @@
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Género";
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
-            // rbFemenino
+            // rbMasculino
             // 
-            this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(16, 15);
-            this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
-            this.rbFemenino.TabIndex = 0;
-            this.rbFemenino.TabStop = true;
-            this.rbFemenino.Text = "Femenino";
-            this.rbFemenino.UseVisualStyleBackColor = true;
+            this.rbMasculino.AutoSize = true;
+            this.rbMasculino.Location = new System.Drawing.Point(93, 15);
+            this.rbMasculino.Name = "rbMasculino";
+            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.TabIndex = 2;
+            this.rbMasculino.TabStop = true;
+            this.rbMasculino.Text = "Masculino";
+            this.rbMasculino.UseVisualStyleBackColor = true;
             // 
             // rbNoBinario
             // 
@@ -171,16 +182,16 @@
             this.rbNoBinario.Text = "No binario";
             this.rbNoBinario.UseVisualStyleBackColor = true;
             // 
-            // rbMasculino
+            // rbFemenino
             // 
-            this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(93, 15);
-            this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
-            this.rbMasculino.TabIndex = 2;
-            this.rbMasculino.TabStop = true;
-            this.rbMasculino.Text = "Masculino";
-            this.rbMasculino.UseVisualStyleBackColor = true;
+            this.rbFemenino.AutoSize = true;
+            this.rbFemenino.Location = new System.Drawing.Point(16, 15);
+            this.rbFemenino.Name = "rbFemenino";
+            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
+            this.rbFemenino.TabIndex = 0;
+            this.rbFemenino.TabStop = true;
+            this.rbFemenino.Text = "Femenino";
+            this.rbFemenino.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
