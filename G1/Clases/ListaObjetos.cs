@@ -60,7 +60,7 @@ namespace G1.Clases
 
         public Alumnos[] Copiar(Alumnos[] Origen, Alumnos[] Destino)
         {
-            for (int i = 0; i < ProximaPosicion; i++)
+            for (int i = 0; i < Origen.Length; i++)
             {
                 Destino[i] = Origen[i];
             }

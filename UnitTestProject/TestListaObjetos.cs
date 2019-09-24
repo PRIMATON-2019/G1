@@ -30,14 +30,14 @@ namespace G1.Tests
             Alumnos alumno3 = new Alumnos();
 
             Alumnos[] origen = {alumno1,alumno2,alumno3};
-            Alumnos[] Destino = origen;
+            Alumnos[] Destino = new Alumnos[origen.Length];
             
 
             //Act = Prueba - Se llama al metodo a ser testeado.
             Alumnos[] destino = lo.Copiar(origen, Destino);
 
             Alumnos[] origen1 = { alumno1, alumno2, alumno3, alumno1};
-            origen = origen1;
+            //origen = origen1;
 
             //Assert = Afirmacion
             Assert.AreEqual(destino, origen);
