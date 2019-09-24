@@ -58,7 +58,7 @@ namespace G1.Clases
             lista = this.Copiar(lista, Temp);
         }
 
-        private Alumnos[] Copiar(Alumnos[] Origen, Alumnos[] Destino)
+        public Alumnos[] Copiar(Alumnos[] Origen, Alumnos[] Destino)
         {
             for (int i = 0; i < ProximaPosicion; i++)
             {
