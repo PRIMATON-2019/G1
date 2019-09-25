@@ -77,9 +77,9 @@ namespace G1
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            
-            ABM_Semillas form_semillas = new ABM_Semillas();
-            form_semillas.Show();
+
+            Form1 semillas = new Form1();
+            semillas.Show();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)

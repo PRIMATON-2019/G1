@@ -1,4 +1,4 @@
-﻿namespace agroApp.Semillas
+﻿namespace G1.Formularios
 {
     partial class Form5
     {

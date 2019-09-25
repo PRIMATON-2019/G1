@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace agroApp.Semillas
+namespace G1.Formularios
 {
     public partial class Form1 : Form
     {
