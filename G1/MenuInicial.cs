@@ -79,6 +79,7 @@ namespace G1
         {
             
             ABM_Semillas form_semillas = new ABM_Semillas();
+            form_semillas.Show();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
