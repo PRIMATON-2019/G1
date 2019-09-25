@@ -18,8 +18,10 @@ namespace G1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Login login = new Login();
-            login.Show();
+            //Login login = new Login();
+            //login.Show();
+            MenuInicial inicial = new MenuInicial();
+            inicial.Show();
             Application.Run(); // quítale el parámetro aquí
 
 

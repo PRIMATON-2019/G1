@@ -27,13 +27,21 @@ namespace G1.Clases
         }
         private void ConfiguracionInicial(int cantColumnas, string[] columnas)
         {
-            // Diseñamos la Tabla 
-            for (int i = 0; i < cantColumnas; i++)
+            if (System.IO.File.Exists(NombreArchivo + ".xml"))
             {
-                Tabla.Columns.Add(columnas[i]);
+                Tabla.ReadXml(NombreArchivo + ".xml");
             }
-
-            // busca si el archivo ya existe para precargar sus datos
+            else
+            {
+                for (int i = 0; i < cantColumnas; i++)
+                {
+                    Tabla.Columns.Add(columnas[i]);
+                }
+                GrabarArchivo();
+            }
+        }
+        public void LeerArchivo()
+        {
             if (System.IO.File.Exists(NombreArchivo + ".xml"))
             {
                 Tabla.ReadXml(NombreArchivo + ".xml");
@@ -60,28 +68,20 @@ namespace G1.Clases
             GrabarArchivo();
         }
 
-        public void LeerArchivo()
+        public DataTable BuscarDatos(string nombreArchivo)
         {
-            if (System.IO.File.Exists(NombreArchivo + ".xml"))
+            //DataSet ds = new DataSet();
+            if (System.IO.File.Exists(nombreArchivo + ".xml"))
             {
-                Tabla.ReadXml(NombreArchivo + ".xml");
+                Tabla.TableName = nombreArchivo;
+                Tabla.ReadXmlSchema(nombreArchivo + ".xml");
+                Tabla.ReadXml(nombreArchivo + ".xml");
             }
-        }
-
-        public DataSet BuscarDatos(string nombreArchivo)
-        {
-            DataSet ds = new DataSet();
-            ds.ReadXml(nombreArchivo + ".xml");
-            return ds;
-
-            //string[,] conjunto = new string[ds.Tables[0].Rows.Count, ds.Tables[0].Columns.Count];
-            //for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
-            //{
-            //    for (int i = 0; i < ds.Tables[0].Columns.Count; i++)
-            //    {
-            //        conjunto[j,i] = ds.Tables[0].Rows[j][i].ToString();
-            //    }
-            //}
+            else
+            {
+                Tabla = null;
+            }
+            return Tabla;
         }
     }
 }

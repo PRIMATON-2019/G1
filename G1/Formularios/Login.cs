@@ -41,11 +41,11 @@ namespace G1.Formularios
             if (txtCorreo.Text != "" && txtClave.Text != "")
             {
                 Persistencia pd = new Persistencia();
-                DataSet ds = pd.BuscarDatos("usuarios");
-                for (int j = 0; j < ds.Tables[0].Rows.Count; j++)
+                DataTable ds = pd.BuscarDatos("usuarios");
+                for (int j = 0; j < ds.Rows.Count; j++)
                 {
-                    string user = ds.Tables[0].Rows[j][0].ToString();
-                    string pass = ds.Tables[0].Rows[j][4].ToString();
+                    string user = ds.Rows[j][0].ToString();
+                    string pass = ds.Rows[j][4].ToString();
                     if (txtCorreo.Text.Equals(user)
                         && txtClave.Text.Equals(pass))
                     {
