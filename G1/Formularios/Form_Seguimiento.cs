@@ -59,6 +59,30 @@ namespace G1.Formularios
             cbTipoCultivo.Enabled = false;
             cbTipoEvento.Enabled = false;
             dtpFechaEvento.Enabled = false;
+            Form_Seguimiento_Load(sender, e);
+        }
+
+        private void Form_Seguimiento_Load(object sender, EventArgs e)
+        {
+            Persistencia pd = new Persistencia();
+            //DataTable ds = pd.BuscarDatos("Usuarios");
+            DataTable dsTiposCultivos = pd.BuscarDatos("Cultivos");
+            // cbUsuarios.Items.Clear();
+
+
+            for (int j = 0; j < dsTiposCultivos.Rows.Count; j++)
+            {
+                dataGridView1.Rows.Add(
+
+                        dsTiposCultivos.Rows[j][0].ToString(),
+                        dsTiposCultivos.Rows[j][1].ToString(),
+                        dsTiposCultivos.Rows[j][2].ToString(),
+                        dsTiposCultivos.Rows[j][3].ToString()
+
+
+
+                      );
+            }
         }
     }
 }

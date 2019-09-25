@@ -6,7 +6,7 @@ namespace G1.Clases
     {
         #region Propiedades
         public DataTable Tabla;
-        public string NombreArchivo;
+        public string nombreArchivo;
         #endregion
 
         /// <summary>
@@ -21,15 +21,17 @@ namespace G1.Clases
         }
         public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
-            NombreArchivo = nombreArchivo;
-            Tabla = new DataTable(NombreArchivo);
-            ConfiguracionInicial(cantColumnas, columnas);
+            nombreArchivo = nombreArchivo;
+            Tabla = new DataTable(nombreArchivo);
+            ConfiguracionInicial(cantColumnas, columnas, nombreArchivo);
         }
-        private void ConfiguracionInicial(int cantColumnas, string[] columnas)
+        private void ConfiguracionInicial(int cantColumnas, string[] columnas, string nombreArchivo)
         {
-            if (System.IO.File.Exists(NombreArchivo + ".xml"))
+            if (System.IO.File.Exists(nombreArchivo + ".xml"))
             {
-                Tabla.ReadXml(NombreArchivo + ".xml");
+                Tabla.TableName = nombreArchivo;
+                Tabla.ReadXmlSchema(nombreArchivo + ".xml");
+                Tabla.ReadXml(nombreArchivo + ".xml");
             }
             else
             {
@@ -42,9 +44,9 @@ namespace G1.Clases
         }
         public void LeerArchivo()
         {
-            if (System.IO.File.Exists(NombreArchivo + ".xml"))
+            if (System.IO.File.Exists(nombreArchivo + ".xml"))
             {
-                Tabla.ReadXml(NombreArchivo + ".xml");
+                Tabla.ReadXml(nombreArchivo + ".xml");
             }
         }
         /// <summary>
@@ -53,7 +55,7 @@ namespace G1.Clases
         /// <param name="NombreArchivo">Nombre de Archivo, sin extension</param>
         public void GrabarArchivo()
         {
-            Tabla.WriteXml(NombreArchivo + ".xml");
+            Tabla.WriteXml(nombreArchivo + ".xml");
         }
         /// <summary>
         /// Rellena las columnas del último registro agregado con los valores del textbox correspondiente
