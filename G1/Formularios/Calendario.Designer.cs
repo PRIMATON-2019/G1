@@ -93,8 +93,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label53 = new System.Windows.Forms.Label();
-            this.panel43 = new System.Windows.Forms.Panel();
             this.panel36 = new System.Windows.Forms.Panel();
+            this.panel43 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.panel30 = new System.Windows.Forms.Panel();
             this.panel31 = new System.Windows.Forms.Panel();
@@ -131,8 +131,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.panel37 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnAtras = new System.Windows.Forms.Button();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel27.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -147,8 +149,8 @@
             this.panel12.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel43.SuspendLayout();
             this.panel36.SuspendLayout();
+            this.panel43.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel31.SuspendLayout();
@@ -823,6 +825,14 @@
             this.label53.TabIndex = 32;
             this.label53.Text = "Frutas y Hortalizas";
             // 
+            // panel36
+            // 
+            this.panel36.Controls.Add(this.panel43);
+            this.panel36.Location = new System.Drawing.Point(62, 313);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(53, 45);
+            this.panel36.TabIndex = 19;
+            // 
             // panel43
             // 
             this.panel43.BackColor = System.Drawing.Color.DimGray;
@@ -831,14 +841,6 @@
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(53, 45);
             this.panel43.TabIndex = 31;
-            // 
-            // panel36
-            // 
-            this.panel36.Controls.Add(this.panel43);
-            this.panel36.Location = new System.Drawing.Point(62, 313);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(53, 45);
-            this.panel36.TabIndex = 19;
             // 
             // panel29
             // 
@@ -1162,15 +1164,17 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.btnAtras);
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel2.Controls.Add(this.panel38);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.panel37);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1193,26 +1197,51 @@
             this.ttmensaje.IsBalloon = true;
             this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
             // 
+            // panel37
+            // 
+            this.panel37.BackColor = System.Drawing.Color.Chocolate;
+            this.panel37.Location = new System.Drawing.Point(-1, 160);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(10, 35);
+            this.panel37.TabIndex = 4;
+            // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(9, 161);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(11, 160);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 34);
-            this.button1.TabIndex = 1;
+            this.button1.Size = new System.Drawing.Size(160, 33);
+            this.button1.TabIndex = 3;
             this.button1.Text = "Calendario";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // btnAtras
+            // panel38
             // 
-            this.btnAtras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(9, 203);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(153, 34);
-            this.btnAtras.TabIndex = 2;
-            this.btnAtras.Text = "atras";
-            this.btnAtras.UseVisualStyleBackColor = true;
+            this.panel38.BackColor = System.Drawing.Color.Chocolate;
+            this.panel38.Location = new System.Drawing.Point(0, 201);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(10, 35);
+            this.panel38.TabIndex = 6;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(12, 201);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 33);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Atras";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Calendario
             // 
@@ -1253,9 +1282,9 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel36.ResumeLayout(false);
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
-            this.panel36.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel30.ResumeLayout(false);
@@ -1403,7 +1432,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip ttmensaje;
+        private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Panel panel38;
+        private System.Windows.Forms.Button button2;
     }
 }
