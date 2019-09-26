@@ -132,7 +132,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.panel27.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -1170,7 +1170,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnAtras);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -1204,15 +1204,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // btnAtras
             // 
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(9, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 34);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "atras";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAtras.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(9, 203);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(153, 34);
+            this.btnAtras.TabIndex = 2;
+            this.btnAtras.Text = "atras";
+            this.btnAtras.UseVisualStyleBackColor = true;
             // 
             // Calendario
             // 
@@ -1404,6 +1404,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ToolTip ttmensaje;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAtras;
     }
 }
