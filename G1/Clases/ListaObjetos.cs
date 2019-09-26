@@ -1,6 +1,7 @@
-﻿using System;
+﻿using G1.Clases.Modelos;
+using System;
 
-namespace agroAPP3
+namespace G1.Clases
 {
     public class ListaObjetos
 
@@ -57,9 +58,9 @@ namespace agroAPP3
             lista = this.Copiar(lista, Temp);
         }
 
-        private Alumnos[] Copiar(Alumnos[] Origen, Alumnos[] Destino)
+        public Alumnos[] Copiar(Alumnos[] Origen, Alumnos[] Destino)
         {
-            for (int i = 0; i < ProximaPosicion; i++)
+            for (int i = 0; i < Origen.Length; i++)
             {
                 Destino[i] = Origen[i];
             }
@@ -158,7 +159,7 @@ namespace agroAPP3
             for (int i = 0; i < copia.Length; i++)
             {
                 Alumnos alumno = copia[i];
-                salida = salida + (alumno.Apellido + ", " + alumno.Nombre + ": " + alumno.Notas[0] + "\r\n");
+                salida += (alumno.Apellido + ", " + alumno.Nombre + ": " + alumno.Notas[0] + "\r\n");
             }
 
             return salida;

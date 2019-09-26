@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace G1.Clases.Modelos
 {
-    public class Alumnos
+    public class Eventos
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
-        public string[] Notas = new string[1]; 
+        public DateTime Fecha { get; set; }
+        public Usuario Responsable { get; set; }
+        public DetalleEventos Detalles { get; set; }
     }
 }

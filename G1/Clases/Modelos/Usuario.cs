@@ -1,4 +1,4 @@
-﻿namespace G1.Clases
+﻿namespace G1.Clases.Modelos
 {
     public class Usuario
     {
@@ -6,6 +6,6 @@
         public string NombreUsuario { get; set; }
         public string Clave { get; set; }
         public Persona Persona { get; set; }
-        public int Rol { get; set; }
-    }
+           }
+  
 }

@@ -1,4 +1,4 @@
-﻿namespace G1.Clases
+﻿namespace G1.Clases.Modelos
 {
     public class Localidad
     {
