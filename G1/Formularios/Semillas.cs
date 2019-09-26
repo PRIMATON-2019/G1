@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace G1.Formularios
 {
-    public partial class Form1 : Form
+    public partial class Semillas : Form
     {
-        public Form1()
+        public Semillas()
         {
             InitializeComponent();
         }
@@ -22,7 +22,7 @@ namespace G1.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form2 formu2 = new Form2();
+            Flores formu2 = new Flores();
             formu2.Show();
             this.Hide();
         }
@@ -34,14 +34,14 @@ namespace G1.Formularios
 
         private void BtnFrutasHortalizas_Click(object sender, EventArgs e)
         {
-            Form3 formu3 = new Form3();
+            Frutas_Y_Hortalizas formu3 = new Frutas_Y_Hortalizas();
             formu3.Show();
             this.Hide();
         }
 
         private void BtnHojas_Click(object sender, EventArgs e)
         {
-            Form4 formu4 = new Form4();
+            Hojas formu4 = new Hojas();
             formu4.Show();
             this.Hide();
         }
@@ -49,6 +49,13 @@ namespace G1.Formularios
         private void BtnSemilla_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            MenuInicial menu = new MenuInicial();
+            menu.Show();
+            this.Hide();
         }
     }
 }

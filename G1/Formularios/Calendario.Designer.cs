@@ -129,12 +129,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel38 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
             this.panel27.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -1183,19 +1183,29 @@
             this.panel2.Size = new System.Drawing.Size(171, 542);
             this.panel2.TabIndex = 5;
             // 
-            // panel1
+            // panel38
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chocolate;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 48);
-            this.panel1.TabIndex = 4;
+            this.panel38.BackColor = System.Drawing.Color.Chocolate;
+            this.panel38.Location = new System.Drawing.Point(0, 201);
+            this.panel38.Name = "panel38";
+            this.panel38.Size = new System.Drawing.Size(10, 35);
+            this.panel38.TabIndex = 6;
             // 
-            // ttmensaje
+            // button2
             // 
-            this.ttmensaje.IsBalloon = true;
-            this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(12, 201);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 33);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Atras";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // panel37
             // 
@@ -1220,28 +1230,19 @@
             this.button1.Text = "Calendario";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // panel38
+            // panel1
             // 
-            this.panel38.BackColor = System.Drawing.Color.Chocolate;
-            this.panel38.Location = new System.Drawing.Point(0, 201);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(10, 35);
-            this.panel38.TabIndex = 6;
+            this.panel1.BackColor = System.Drawing.Color.Chocolate;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(967, 48);
+            this.panel1.TabIndex = 4;
             // 
-            // button2
+            // ttmensaje
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(12, 201);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 33);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Atras";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ttmensaje.IsBalloon = true;
+            this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
             // 
             // Calendario
             // 

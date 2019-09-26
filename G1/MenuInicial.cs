@@ -90,8 +90,9 @@ namespace G1
         private void Button2_Click(object sender, EventArgs e)
         {
 
-            Form1 semillas = new Form1();
+            Semillas semillas = new Semillas();
             semillas.Show();
+            this.Hide();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -111,7 +112,9 @@ namespace G1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           
+            Calendario calendario = new Calendario();
+            calendario.Show();
+            this.Hide();
         }
 
         private void UcCalendario2_Load(object sender, EventArgs e)

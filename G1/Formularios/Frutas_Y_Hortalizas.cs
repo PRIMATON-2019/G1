@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G1.Formularios
 {
-    public partial class Form3 : Form
+    public partial class Frutas_Y_Hortalizas : Form
     {
-        public Form3()
+        public Frutas_Y_Hortalizas()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace G1.Formularios
 
         private void Label1_Click(object sender, EventArgs e)
         {
-            Form1 formu1 = new Form1();
+            Semillas formu1 = new Semillas();
             formu1.Show();
             this.Hide();
 
@@ -48,8 +48,15 @@ namespace G1.Formularios
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Form5 formu5 = new Form5();
+            Acelga formu5 = new Acelga();
             formu5.Show();
+            this.Hide();
+        }
+
+        private void Button9_Click(object sender, EventArgs e)
+        {
+            Semillas sm = new Semillas();
+            sm.Show();
             this.Hide();
         }
     }

@@ -69,7 +69,8 @@ namespace G1.Formularios
             DataTable dsTiposCultivos = pd.BuscarDatos("Cultivos");
             // cbUsuarios.Items.Clear();
 
-
+            //Comento este ciclo for por que tira error fuera de rango.
+/*
             for (int j = 0; j < dsTiposCultivos.Rows.Count; j++)
             {
                 dataGridView1.Rows.Add(
@@ -82,7 +83,7 @@ namespace G1.Formularios
 
 
                       );
-            }
+            }*/
         }
     }
 }

@@ -55,5 +55,12 @@ namespace G1.Formularios
         {
 
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            MenuInicial menu = new MenuInicial();
+            menu.Show();
+            this.Hide();
+        }
     }
 }
