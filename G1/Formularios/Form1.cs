@@ -45,5 +45,10 @@ namespace G1.Formularios
             formu4.Show();
             this.Hide();
         }
+
+        private void BtnSemilla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
