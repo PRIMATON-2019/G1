@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuInicial));
             this.panelArriba = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -59,6 +60,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
             this.panelArriba.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -71,7 +73,6 @@
             this.panel2.SuspendLayout();
             this.PanelSubmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panelPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelArriba
@@ -421,17 +422,16 @@
             // panelPrincipal
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.DarkSeaGreen;
-
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(172, 47);
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Size = new System.Drawing.Size(928, 573);
             this.panelPrincipal.TabIndex = 2;
             // 
-            // ucCalendario2
+            // ttmensaje
             // 
-            
-           
+            this.ttmensaje.IsBalloon = true;
+            this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
             // 
             // MenuInicial
             // 
@@ -458,7 +458,6 @@
             this.panel2.ResumeLayout(false);
             this.PanelSubmenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panelPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -495,7 +494,7 @@
         private System.Windows.Forms.Button btnopcion3;
         private System.Windows.Forms.Button btnopcion2;
         private System.Windows.Forms.Button btnopcion1;
-        
+        private System.Windows.Forms.ToolTip ttmensaje;
     }
 }
 

@@ -10,6 +10,18 @@ namespace G1
         public MenuInicial()
         {
             InitializeComponent();
+            this.ttmensaje.SetToolTip(this.button1, "Muestra el calendario lunar con su repectiva guia para sembrar");
+            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendad para plantar ");
+            this.ttmensaje.SetToolTip(this.button3, "Progama alarmas para recordar Actividades en tu Huerta ");
+            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendada para plantar ");
+            this.ttmensaje.SetToolTip(this.btnSeguimiento, "Realiza seguimiento de tu Cosecha ");
+            this.ttmensaje.SetToolTip(this.pictureBox2, "Cerrar");
+            this.ttmensaje.SetToolTip(this.btnRestaurar, "Restaurar");
+            this.ttmensaje.SetToolTip(this.btnMininizar, "Minimizar");
+
+
+
+
         }
 
         private void Btncerrar_Click(object sender, EventArgs e)
@@ -103,6 +115,11 @@ namespace G1
         }
 
         private void UcCalendario2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ttmensaje_Popup(object sender, PopupEventArgs e)
         {
 
         }
