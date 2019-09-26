@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendario));
             this.label44 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -129,6 +130,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel27.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -144,6 +148,7 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel43.SuspendLayout();
+            this.panel36.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel30.SuspendLayout();
             this.panel31.SuspendLayout();
@@ -180,7 +185,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.Orange;
+            this.label25.BackColor = System.Drawing.Color.Goldenrod;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(13, 9);
             this.label25.Name = "label25";
@@ -242,7 +247,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(13, 9);
+            this.label30.Location = new System.Drawing.Point(9, 9);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(24, 25);
             this.label30.TabIndex = 8;
@@ -250,7 +255,7 @@
             // 
             // panel27
             // 
-            this.panel27.BackColor = System.Drawing.Color.Brown;
+            this.panel27.BackColor = System.Drawing.Color.Tomato;
             this.panel27.Controls.Add(this.label44);
             this.panel27.Location = new System.Drawing.Point(132, 192);
             this.panel27.Name = "panel27";
@@ -278,9 +283,9 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.Brown;
+            this.panel13.BackColor = System.Drawing.Color.Tomato;
             this.panel13.Controls.Add(this.label30);
-            this.panel13.Location = new System.Drawing.Point(447, 69);
+            this.panel13.Location = new System.Drawing.Point(437, 69);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(53, 45);
             this.panel13.TabIndex = 10;
@@ -297,7 +302,7 @@
             // 
             // panel21
             // 
-            this.panel21.BackColor = System.Drawing.Color.Brown;
+            this.panel21.BackColor = System.Drawing.Color.Tomato;
             this.panel21.Controls.Add(this.label38);
             this.panel21.Location = new System.Drawing.Point(60, 129);
             this.panel21.Name = "panel21";
@@ -306,7 +311,7 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.Purple;
+            this.panel11.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel11.Controls.Add(this.label28);
             this.panel11.Location = new System.Drawing.Point(291, 69);
             this.panel11.Name = "panel11";
@@ -325,7 +330,7 @@
             // 
             // panel20
             // 
-            this.panel20.BackColor = System.Drawing.Color.Orange;
+            this.panel20.BackColor = System.Drawing.Color.Goldenrod;
             this.panel20.Controls.Add(this.label37);
             this.panel20.Location = new System.Drawing.Point(133, 129);
             this.panel20.Name = "panel20";
@@ -343,7 +348,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.Orange;
+            this.panel9.BackColor = System.Drawing.Color.Goldenrod;
             this.panel9.Controls.Add(this.label26);
             this.panel9.Location = new System.Drawing.Point(132, 69);
             this.panel9.Name = "panel9";
@@ -362,7 +367,7 @@
             // 
             // panel28
             // 
-            this.panel28.BackColor = System.Drawing.Color.Purple;
+            this.panel28.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel28.Controls.Add(this.label45);
             this.panel28.Location = new System.Drawing.Point(59, 192);
             this.panel28.Name = "panel28";
@@ -371,7 +376,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.Orange;
+            this.panel8.BackColor = System.Drawing.Color.Goldenrod;
             this.panel8.Controls.Add(this.label25);
             this.panel8.Location = new System.Drawing.Point(59, 69);
             this.panel8.Name = "panel8";
@@ -380,7 +385,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.Orange;
+            this.panel7.BackColor = System.Drawing.Color.Goldenrod;
             this.panel7.Controls.Add(this.label24);
             this.panel7.Location = new System.Drawing.Point(517, 27);
             this.panel7.Name = "panel7";
@@ -389,7 +394,7 @@
             // 
             // panel12
             // 
-            this.panel12.BackColor = System.Drawing.Color.Purple;
+            this.panel12.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel12.Controls.Add(this.label29);
             this.panel12.Location = new System.Drawing.Point(361, 69);
             this.panel12.Name = "panel12";
@@ -692,7 +697,7 @@
             // 
             // monthCalendar4
             // 
-            this.monthCalendar4.Location = new System.Drawing.Point(222, 341);
+            this.monthCalendar4.Location = new System.Drawing.Point(185, 371);
             this.monthCalendar4.Name = "monthCalendar4";
             this.monthCalendar4.TabIndex = 37;
             // 
@@ -700,17 +705,17 @@
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dateTimePicker1.Location = new System.Drawing.Point(547, 504);
+            this.dateTimePicker1.Location = new System.Drawing.Point(404, 504);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(235, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(279, 26);
             this.dateTimePicker1.TabIndex = 36;
             // 
             // label56
             // 
             this.label56.AutoSize = true;
-            this.label56.BackColor = System.Drawing.Color.Purple;
+            this.label56.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(3, 456);
+            this.label56.Location = new System.Drawing.Point(6, 468);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(58, 24);
             this.label56.TabIndex = 35;
@@ -719,9 +724,9 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.Aqua;
+            this.label55.BackColor = System.Drawing.Color.DarkTurquoise;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(3, 419);
+            this.label55.Location = new System.Drawing.Point(6, 431);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(63, 24);
             this.label55.TabIndex = 34;
@@ -730,9 +735,9 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.Orange;
+            this.label54.BackColor = System.Drawing.Color.Goldenrod;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(3, 381);
+            this.label54.Location = new System.Drawing.Point(6, 393);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(67, 24);
             this.label54.TabIndex = 33;
@@ -757,14 +762,13 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panel6.Controls.Add(this.monthCalendar4);
             this.panel6.Controls.Add(this.dateTimePicker1);
             this.panel6.Controls.Add(this.label56);
             this.panel6.Controls.Add(this.label55);
             this.panel6.Controls.Add(this.label54);
             this.panel6.Controls.Add(this.label53);
-            this.panel6.Controls.Add(this.panel43);
             this.panel6.Controls.Add(this.panel36);
             this.panel6.Controls.Add(this.panel29);
             this.panel6.Controls.Add(this.panel30);
@@ -811,9 +815,9 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.Brown;
+            this.label53.BackColor = System.Drawing.Color.Tomato;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(3, 493);
+            this.label53.Location = new System.Drawing.Point(6, 505);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(162, 24);
             this.label53.TabIndex = 32;
@@ -823,13 +827,14 @@
             // 
             this.panel43.BackColor = System.Drawing.Color.DimGray;
             this.panel43.Controls.Add(this.label60);
-            this.panel43.Location = new System.Drawing.Point(63, 313);
+            this.panel43.Location = new System.Drawing.Point(0, 0);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(53, 45);
             this.panel43.TabIndex = 31;
             // 
             // panel36
             // 
+            this.panel36.Controls.Add(this.panel43);
             this.panel36.Location = new System.Drawing.Point(62, 313);
             this.panel36.Name = "panel36";
             this.panel36.Size = new System.Drawing.Size(53, 45);
@@ -837,9 +842,9 @@
             // 
             // panel29
             // 
-            this.panel29.BackColor = System.Drawing.Color.Aqua;
+            this.panel29.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel29.Controls.Add(this.label46);
-            this.panel29.Location = new System.Drawing.Point(520, 253);
+            this.panel29.Location = new System.Drawing.Point(518, 253);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(53, 45);
             this.panel29.TabIndex = 18;
@@ -848,34 +853,34 @@
             // 
             this.panel30.BackColor = System.Drawing.Color.DimGray;
             this.panel30.Controls.Add(this.label47);
-            this.panel30.Location = new System.Drawing.Point(448, 253);
+            this.panel30.Location = new System.Drawing.Point(437, 253);
             this.panel30.Name = "panel30";
             this.panel30.Size = new System.Drawing.Size(53, 45);
             this.panel30.TabIndex = 19;
             // 
             // panel31
             // 
-            this.panel31.BackColor = System.Drawing.Color.Brown;
+            this.panel31.BackColor = System.Drawing.Color.Tomato;
             this.panel31.Controls.Add(this.label48);
-            this.panel31.Location = new System.Drawing.Point(364, 253);
+            this.panel31.Location = new System.Drawing.Point(361, 253);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(53, 45);
             this.panel31.TabIndex = 20;
             // 
             // panel32
             // 
-            this.panel32.BackColor = System.Drawing.Color.Brown;
+            this.panel32.BackColor = System.Drawing.Color.Tomato;
             this.panel32.Controls.Add(this.label49);
-            this.panel32.Location = new System.Drawing.Point(294, 253);
+            this.panel32.Location = new System.Drawing.Point(292, 253);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(53, 45);
             this.panel32.TabIndex = 21;
             // 
             // panel33
             // 
-            this.panel33.BackColor = System.Drawing.Color.Purple;
+            this.panel33.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel33.Controls.Add(this.label50);
-            this.panel33.Location = new System.Drawing.Point(210, 253);
+            this.panel33.Location = new System.Drawing.Point(208, 253);
             this.panel33.Name = "panel33";
             this.panel33.Size = new System.Drawing.Size(53, 45);
             this.panel33.TabIndex = 22;
@@ -892,9 +897,9 @@
             // 
             // panel34
             // 
-            this.panel34.BackColor = System.Drawing.Color.Purple;
+            this.panel34.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel34.Controls.Add(this.label51);
-            this.panel34.Location = new System.Drawing.Point(135, 253);
+            this.panel34.Location = new System.Drawing.Point(132, 253);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(53, 45);
             this.panel34.TabIndex = 23;
@@ -949,7 +954,7 @@
             // 
             // panel15
             // 
-            this.panel15.BackColor = System.Drawing.Color.Purple;
+            this.panel15.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel15.Controls.Add(this.label32);
             this.panel15.Location = new System.Drawing.Point(518, 129);
             this.panel15.Name = "panel15";
@@ -959,7 +964,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.BackColor = System.Drawing.Color.Purple;
+            this.label32.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(8, 9);
             this.label32.Name = "label32";
@@ -969,9 +974,9 @@
             // 
             // panel23
             // 
-            this.panel23.BackColor = System.Drawing.Color.Orange;
+            this.panel23.BackColor = System.Drawing.Color.Goldenrod;
             this.panel23.Controls.Add(this.label40);
-            this.panel23.Location = new System.Drawing.Point(447, 192);
+            this.panel23.Location = new System.Drawing.Point(437, 192);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(53, 45);
             this.panel23.TabIndex = 12;
@@ -979,6 +984,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Goldenrod;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label40.Location = new System.Drawing.Point(8, 9);
             this.label40.Name = "label40";
@@ -988,9 +994,9 @@
             // 
             // panel16
             // 
-            this.panel16.BackColor = System.Drawing.Color.Purple;
+            this.panel16.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel16.Controls.Add(this.label33);
-            this.panel16.Location = new System.Drawing.Point(448, 129);
+            this.panel16.Location = new System.Drawing.Point(438, 129);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(53, 45);
             this.panel16.TabIndex = 12;
@@ -1007,7 +1013,7 @@
             // 
             // panel24
             // 
-            this.panel24.BackColor = System.Drawing.Color.Orange;
+            this.panel24.BackColor = System.Drawing.Color.Goldenrod;
             this.panel24.Controls.Add(this.label41);
             this.panel24.Location = new System.Drawing.Point(361, 192);
             this.panel24.Name = "panel24";
@@ -1017,6 +1023,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Goldenrod;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label41.Location = new System.Drawing.Point(3, 9);
             this.label41.Name = "label41";
@@ -1045,7 +1052,7 @@
             // 
             // panel25
             // 
-            this.panel25.BackColor = System.Drawing.Color.Orange;
+            this.panel25.BackColor = System.Drawing.Color.Goldenrod;
             this.panel25.Controls.Add(this.label42);
             this.panel25.Location = new System.Drawing.Point(291, 192);
             this.panel25.Name = "panel25";
@@ -1083,7 +1090,7 @@
             // 
             // panel26
             // 
-            this.panel26.BackColor = System.Drawing.Color.Brown;
+            this.panel26.BackColor = System.Drawing.Color.Tomato;
             this.panel26.Controls.Add(this.label43);
             this.panel26.Location = new System.Drawing.Point(207, 192);
             this.panel26.Name = "panel26";
@@ -1102,7 +1109,7 @@
             // 
             // panel19
             // 
-            this.panel19.BackColor = System.Drawing.Color.Orange;
+            this.panel19.BackColor = System.Drawing.Color.Goldenrod;
             this.panel19.Controls.Add(this.label36);
             this.panel19.Location = new System.Drawing.Point(208, 129);
             this.panel19.Name = "panel19";
@@ -1163,6 +1170,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 48);
@@ -1179,6 +1188,32 @@
             this.panel1.Size = new System.Drawing.Size(967, 48);
             this.panel1.TabIndex = 4;
             // 
+            // ttmensaje
+            // 
+            this.ttmensaje.IsBalloon = true;
+            this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(9, 161);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 34);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Calendario";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(9, 203);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(153, 34);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "atras";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Calendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1187,6 +1222,7 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Calendario";
             this.Text = "Calendario";
             this.panel27.ResumeLayout(false);
@@ -1219,6 +1255,7 @@
             this.panel6.PerformLayout();
             this.panel43.ResumeLayout(false);
             this.panel43.PerformLayout();
+            this.panel36.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel30.ResumeLayout(false);
@@ -1365,5 +1402,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolTip ttmensaje;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
