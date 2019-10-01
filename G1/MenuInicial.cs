@@ -10,6 +10,18 @@ namespace G1
         public MenuInicial()
         {
             InitializeComponent();
+            this.ttmensaje.SetToolTip(this.button1, "Muestra el calendario lunar con su repectiva guia para sembrar");
+            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendad para plantar ");
+            this.ttmensaje.SetToolTip(this.button3, "Progama alarmas para recordar Actividades en tu Huerta ");
+            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendada para plantar ");
+            this.ttmensaje.SetToolTip(this.btnSeguimiento, "Realiza seguimiento de tu Cosecha ");
+            this.ttmensaje.SetToolTip(this.pictureBox2, "Cerrar");
+            this.ttmensaje.SetToolTip(this.btnRestaurar, "Restaurar");
+            this.ttmensaje.SetToolTip(this.btnMininizar, "Minimizar");
+
+
+
+
         }
 
         private void Btncerrar_Click(object sender, EventArgs e)
@@ -78,8 +90,9 @@ namespace G1
         private void Button2_Click(object sender, EventArgs e)
         {
 
-            Form1 semillas = new Form1();
+            Semillas semillas = new Semillas();
             semillas.Show();
+            this.Hide();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -94,16 +107,25 @@ namespace G1
 
         private void Button3_Click(object sender, EventArgs e)
         {
-       
+            Alarma alarma = new Alarma();
+            alarma.Show();
+            this.Hide();
         }
 
         private void Button1_Click(object sender, EventArgs e)
+        {
+            Calendario calendario = new Calendario();
+            calendario.Show();
+            this.Hide();
+        }
+
+        private void UcCalendario2_Load(object sender, EventArgs e)
         {
             Calendario cal = new Calendario();
             cal.Show();
         }
 
-        private void UcCalendario2_Load(object sender, EventArgs e)
+        private void Ttmensaje_Popup(object sender, PopupEventArgs e)
         {
 
         }

@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,6 +75,12 @@
     <Compile Include="Formularios\ABM_Semillas.Designer.cs">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Alarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alarma.Designer.cs">
+      <DependentUpon>Alarma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\AltaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,35 +99,35 @@
     <Compile Include="Formularios\Calendario.Designer.cs">
       <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.cs">
+    <Compile Include="Formularios\Semillas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\Semillas.Designer.cs">
+      <DependentUpon>Semillas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form2.cs">
+    <Compile Include="Formularios\Flores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Formularios\Flores.Designer.cs">
+      <DependentUpon>Flores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form3.cs">
+    <Compile Include="Formularios\Frutas_Y_Hortalizas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Formularios\Frutas_Y_Hortalizas.Designer.cs">
+      <DependentUpon>Frutas_Y_Hortalizas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form4.cs">
+    <Compile Include="Formularios\Hojas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Formularios\Hojas.Designer.cs">
+      <DependentUpon>Hojas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form5.cs">
+    <Compile Include="Formularios\Acelga.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Formularios\Acelga.Designer.cs">
+      <DependentUpon>Acelga.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
@@ -145,6 +152,9 @@
     <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alarma.resx">
+      <DependentUpon>Alarma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AltaUsuarios.resx">
       <DependentUpon>AltaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,20 +164,20 @@
     <EmbeddedResource Include="Formularios\Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Semillas.resx">
+      <DependentUpon>Semillas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Flores.resx">
+      <DependentUpon>Flores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frutas_Y_Hortalizas.resx">
+      <DependentUpon>Frutas_Y_Hortalizas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Hojas.resx">
+      <DependentUpon>Hojas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Acelga.resx">
+      <DependentUpon>Acelga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

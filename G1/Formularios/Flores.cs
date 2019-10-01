@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G1.Formularios
 {
-    public partial class Form2 : Form
+    public partial class Flores : Form
     {
-        public Form2()
+        public Flores()
         {
             InitializeComponent();
         }
@@ -31,11 +31,18 @@ namespace G1.Formularios
         {
             label1.ForeColor = Color.Black;
         }
-
+        /*
         private void Label1_Click(object sender, EventArgs e)
         {
-            Form1 formu1 = new Form1();
+            Semillas formu1 = new Semillas();
             formu1.Show();
+            this.Hide();
+        }*/
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Semillas sm = new Semillas();
+            sm.Show();
             this.Hide();
         }
     }

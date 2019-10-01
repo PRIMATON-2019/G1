@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace G1.Formularios
 {
-    public partial class Form5 : Form
+    public partial class Acelga : Form
     {
-        public Form5()
+        public Acelga()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace G1.Formularios
         private void Label1_MouseEnter(object sender, EventArgs e)
         {
          //   label1.ForeColor=
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Frutas_Y_Hortalizas fth = new Frutas_Y_Hortalizas();
+            fth.Show();
+            this.Hide();
         }
     }
 }

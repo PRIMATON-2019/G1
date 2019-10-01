@@ -7,6 +7,5 @@
         public string Observaciones { get; set; }
         public Informacion informacion { get; set; }
         public double Cantidad { get; set; }
-
     }
 }
