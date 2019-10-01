@@ -21,7 +21,7 @@ namespace G1.Clases
         }
         public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
-            nombreArchivo = nombreArchivo;
+            this.nombreArchivo = nombreArchivo;
             Tabla = new DataTable(nombreArchivo);
             ConfiguracionInicial(cantColumnas, columnas, nombreArchivo);
         }
@@ -32,6 +32,7 @@ namespace G1.Clases
                 Tabla.TableName = nombreArchivo;
                 Tabla.ReadXmlSchema(nombreArchivo + ".xml");
                 Tabla.ReadXml(nombreArchivo + ".xml");
+                
             }
             else
             {

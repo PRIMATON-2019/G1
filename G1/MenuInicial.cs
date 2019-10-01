@@ -54,7 +54,7 @@ namespace G1
         private void BtnSeguimiento_Click(object sender, EventArgs e)
         {
             //btnSeguimiento.Visible = true;
-            Form_Seguimiento formSeguimiento = new Form_Seguimiento();
+            Seguimiento formSeguimiento = new Seguimiento();
             formSeguimiento.ShowDialog();
 
 
@@ -99,7 +99,8 @@ namespace G1
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           
+            Calendario cal = new Calendario();
+            cal.Show();
         }
 
         private void UcCalendario2_Load(object sender, EventArgs e)
