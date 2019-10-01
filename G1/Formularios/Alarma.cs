@@ -18,9 +18,41 @@ namespace G1.Formularios
         public Alarma()
         {
             InitializeComponent();
+            Eventos event1 = new Eventos();
+            //String nombre = event1.Detalles.informacion.Nombre;
+            DateTime today = DateTime.Now;
+            DateTime finishRiego = DateTime.Now;
+            DateTime finishPoda = DateTime.Now;
+            DateTime finishCocecha = DateTime.Now;
+
+            //Ejemplos de nombres de productos
+
+            if (event1.Detalles.informacion.Nombre == "zanahoria")
+            {
+                finishRiego = today.AddDays(3);
+                finishPoda = today.AddDays(40);
+                finishCocecha = today.AddDays(90);
+            }
+            if (event1.Detalles.informacion.Nombre == "papa")
+            {
+
+                finishRiego = today.AddDays(2);
+                finishPoda = today.AddDays(54);
+                finishCocecha = today.AddDays(105);
+
+            }
+
+
             // EJEMPLOS DE CARGA
-            dataGridView1.Rows.Add("a", "poda", DateTime.Now, DateTime.Now);
-            dataGridView1.Rows.Add("b", "poda1", DateTime.Now, DateTime.Now);
+            for (int i = 0; i < cantidadDeEventos; i++)
+            {
+
+                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[0].getTipeOfAlert(), event1.Fecha, finishRiego);
+                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[1].getTipeOfAlert(), event1.Fecha, finishPoda);
+                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[2].getTipeOfAlert(), event1.Fecha, finishCocecha);
+                
+            }
+
         }
 
         
