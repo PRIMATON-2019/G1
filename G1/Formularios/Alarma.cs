@@ -44,7 +44,7 @@ namespace G1.Formularios
 
 
             // EJEMPLOS DE CARGA
-            for (int i = 0; i < cantidadDeEventos; i++)
+            for (int i = 0; i < 3; i++)
             {
 
                 dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[0].getTipeOfAlert(), event1.Fecha, finishRiego);

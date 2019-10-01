@@ -51,30 +51,17 @@
     <Compile Include="Clases\Modelos\Eventos.cs" />
     <Compile Include="Clases\Modelos\Informacion.cs" />
     <Compile Include="Clases\Modelos\Empresas.cs" />
-    <Compile Include="Clases\Modelos\Flores.cs" />
-    <Compile Include="Clases\Modelos\Frutas.cs" />
-    <Compile Include="Clases\Internacionalizacion.cs" />
-    <Compile Include="Clases\ListaObjetos.cs" />
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
     <Compile Include="Clases\Modelos\Alumnos.cs" />
     <Compile Include="Clases\Modelos\Localidad.cs" />
     <Compile Include="Clases\Modelos\Pais.cs" />
     <Compile Include="Clases\Modelos\Persona.cs" />
-    <Compile Include="Clases\Modelos\Producto.cs" />
     <Compile Include="Clases\Modelos\Provincia.cs" />
     <Compile Include="Clases\Modelos\Usuario.cs" />
     <Compile Include="Clases\Persistencia.cs" />
     <Compile Include="Clases\Modelos\Pesticidas.cs" />
     <Compile Include="Clases\Modelos\Plagas.cs" />
-    <Compile Include="Clases\Modelos\Semillas.cs" />
-    <Compile Include="Clases\Modelos\Verduras.cs" />
-    <Compile Include="Formularios\ABM_Semillas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\ABM_Semillas.Designer.cs">
-      <DependentUpon>ABM_Semillas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Alarma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,9 +136,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
-      <DependentUpon>ABM_Semillas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Alarma.resx">
       <DependentUpon>Alarma.cs</DependentUpon>
     </EmbeddedResource>

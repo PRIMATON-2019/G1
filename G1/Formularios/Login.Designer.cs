@@ -56,7 +56,8 @@ namespace G1.Formularios
             this.txtCorreo.Location = new System.Drawing.Point(15, 35);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(328, 20);
-            this.txtCorreo.TabIndex = 1;
+            this.txtCorreo.TabIndex = 0;
+            this.txtCorreo.Text = "admin@admin.com";
             // 
             // btnAceptar
             // 
@@ -95,6 +96,7 @@ namespace G1.Formularios
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(328, 20);
             this.txtClave.TabIndex = 1;
+            this.txtClave.Text = "admin";
             // 
             // lblClave
             // 
