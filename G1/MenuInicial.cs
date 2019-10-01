@@ -107,7 +107,9 @@ namespace G1
 
         private void Button3_Click(object sender, EventArgs e)
         {
-       
+            Alarma alarma = new Alarma();
+            alarma.Show();
+            this.Hide();
         }
 
         private void Button1_Click(object sender, EventArgs e)

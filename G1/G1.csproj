@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,6 +74,12 @@
     </Compile>
     <Compile Include="Formularios\ABM_Semillas.Designer.cs">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Alarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Alarma.Designer.cs">
+      <DependentUpon>Alarma.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\AltaUsuarios.cs">
       <SubType>Form</SubType>
@@ -144,6 +151,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\ABM_Semillas.resx">
       <DependentUpon>ABM_Semillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Alarma.resx">
+      <DependentUpon>Alarma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AltaUsuarios.resx">
       <DependentUpon>AltaUsuarios.cs</DependentUpon>

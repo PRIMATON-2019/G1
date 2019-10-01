@@ -12,5 +12,7 @@ namespace G1.Clases.Modelos
         public DateTime Fecha { get; set; }
         public Usuario Responsable { get; set; }
         public DetalleEventos Detalles { get; set; }
+        public Alerta[] Alertas { get; set; }
+
     }
 }

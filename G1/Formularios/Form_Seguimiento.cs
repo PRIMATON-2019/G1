@@ -1,4 +1,5 @@
 ﻿using G1.Clases;
+using G1.Clases.Modelos;
 using System;
 using System.Data;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace G1.Formularios
             cbTipoCultivo.Enabled = true;
             cbTipoEvento.Enabled = true;
             dtpFechaEvento.Enabled = true;
-
+            
 
             Persistencia pd = new Persistencia();
             DataTable ds = pd.BuscarDatos("Usuarios");
@@ -46,6 +47,28 @@ namespace G1.Formularios
         private void BtnAgregarEvento_Click(object sender, EventArgs e)
         {
             string[] columnas = { "TipoEvento", "Fecha", "TipoCultivo", "Responsable" };
+            Alerta[] alertas = new Alerta[2];
+            Usuario user = new Usuario();
+            
+
+            alertas[0].Id = 1;
+            alertas[0].NombreAlerta = "Riego";
+            alertas[0].TipoAlerta = 1;
+            alertas[0].FechaAlerta = DateTime.Now;
+            alertas[0].Usuarios = user;
+
+            alertas[1].Id = 2;
+            alertas[1].NombreAlerta = "Poda";
+            alertas[1].TipoAlerta = 2;
+            alertas[1].FechaAlerta = DateTime.Now;
+            alertas[1].Usuarios = user;
+
+            alertas[2].Id = 3;
+            alertas[2].NombreAlerta = "Cocecha";
+            alertas[2].TipoAlerta = 3;
+            alertas[2].FechaAlerta = DateTime.Now;
+            alertas[2].Usuarios = user;
+
 
             Persistencia pd = new Persistencia(4, columnas, "cultivos");
             string[] datos = {cbTipoEvento.Text,
@@ -60,6 +83,9 @@ namespace G1.Formularios
             cbTipoEvento.Enabled = false;
             dtpFechaEvento.Enabled = false;
             Form_Seguimiento_Load(sender, e);
+
+
+
         }
 
         private void Form_Seguimiento_Load(object sender, EventArgs e)
