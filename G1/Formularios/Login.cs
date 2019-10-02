@@ -40,18 +40,28 @@ namespace G1.Formularios
             //Verificar usuario ingresado.
             if (txtCorreo.Text != "" && txtClave.Text != "")
             {
-                Persistencia pd = new Persistencia();
-                DataTable ds = pd.BuscarDatos("usuarios");
-                for (int j = 0; j < ds.Rows.Count; j++)
+                try
                 {
-                    string user = ds.Rows[j][0].ToString();
-                    string pass = ds.Rows[j][4].ToString();
-                    if (txtCorreo.Text.Equals(user)
-                        && txtClave.Text.Equals(pass))
+
+
+                    Persistencia pd = new Persistencia();
+                    DataTable ds = pd.BuscarDatos("usuarios");
+                    for (int j = 0; j < ds.Rows.Count; j++)
                     {
-                        MenuInicial mi = new MenuInicial();
-                        mi.Show();
+                        string user = ds.Rows[j][0].ToString();
+                        string pass = ds.Rows[j][4].ToString();
+                        if (txtCorreo.Text.Equals(user)
+                            && txtClave.Text.Equals(pass))
+                        {
+                            MenuInicial mi = new MenuInicial();
+                            mi.Show();
+                        }
                     }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Debe generar antes un usuario.");
                 }
             }
             else
@@ -81,6 +91,6 @@ namespace G1.Formularios
             altaUsuarios.ShowDialog();
         }
 
-      
+
     }
 }

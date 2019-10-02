@@ -49,9 +49,11 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(272, 163);
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Location = new System.Drawing.Point(363, 201);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmar.Size = new System.Drawing.Size(100, 28);
             this.btnConfirmar.TabIndex = 5;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
@@ -59,18 +61,20 @@
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(12, 116);
+            this.TxtNombre.Location = new System.Drawing.Point(16, 143);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(207, 20);
+            this.TxtNombre.Size = new System.Drawing.Size(275, 22);
             this.TxtNombre.TabIndex = 3;
             this.TxtNombre.TextChanged += new System.EventHandler(this.TxtNombre_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 100);
+            this.label1.Location = new System.Drawing.Point(16, 123);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -78,9 +82,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(222, 100);
+            this.label2.Location = new System.Drawing.Point(296, 123);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Apellido";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
@@ -88,51 +93,57 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(212, 49);
+            this.label3.Location = new System.Drawing.Point(283, 60);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.Size = new System.Drawing.Size(129, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Repetir contraseña";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // txtClaveConfirmacion
             // 
-            this.txtClaveConfirmacion.Location = new System.Drawing.Point(215, 65);
+            this.txtClaveConfirmacion.Location = new System.Drawing.Point(287, 80);
+            this.txtClaveConfirmacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClaveConfirmacion.Name = "txtClaveConfirmacion";
-            this.txtClaveConfirmacion.Size = new System.Drawing.Size(216, 20);
+            this.txtClaveConfirmacion.Size = new System.Drawing.Size(287, 22);
             this.txtClaveConfirmacion.TabIndex = 2;
             this.txtClaveConfirmacion.TextChanged += new System.EventHandler(this.TxtClaveConfirmacion_TextChanged);
             // 
             // txtClave
             // 
-            this.txtClave.Location = new System.Drawing.Point(12, 65);
+            this.txtClave.Location = new System.Drawing.Point(16, 80);
+            this.txtClave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(197, 20);
+            this.txtClave.Size = new System.Drawing.Size(261, 22);
             this.txtClave.TabIndex = 1;
             this.txtClave.TextChanged += new System.EventHandler(this.TxtClave_TextChanged);
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(12, 26);
+            this.txtCorreo.Location = new System.Drawing.Point(16, 32);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(419, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(557, 22);
             this.txtCorreo.TabIndex = 0;
             this.txtCorreo.TextChanged += new System.EventHandler(this.TxtCorreo_TextChanged);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(225, 116);
+            this.txtApellido.Location = new System.Drawing.Point(300, 143);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(206, 20);
+            this.txtApellido.Size = new System.Drawing.Size(273, 22);
             this.txtApellido.TabIndex = 4;
             this.txtApellido.TextChanged += new System.EventHandler(this.TxtApellido_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 49);
+            this.label10.Location = new System.Drawing.Point(12, 60);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.Size = new System.Drawing.Size(81, 17);
             this.label10.TabIndex = 24;
             this.label10.Text = "Contraseña";
             this.label10.Click += new System.EventHandler(this.Label10_Click);
@@ -140,9 +151,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(9, 10);
+            this.label11.Location = new System.Drawing.Point(12, 12);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(94, 13);
+            this.label11.Size = new System.Drawing.Size(125, 17);
             this.label11.TabIndex = 25;
             this.label11.Text = "Correo Electrónico";
             this.label11.Click += new System.EventHandler(this.Label11_Click);
@@ -152,9 +164,11 @@
             this.groupBox1.Controls.Add(this.rbMasculino);
             this.groupBox1.Controls.Add(this.rbNoBinario);
             this.groupBox1.Controls.Add(this.rbFemenino);
-            this.groupBox1.Location = new System.Drawing.Point(11, 151);
+            this.groupBox1.Location = new System.Drawing.Point(15, 186);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(255, 44);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(340, 54);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Género";
@@ -163,9 +177,10 @@
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(93, 15);
+            this.rbMasculino.Location = new System.Drawing.Point(124, 18);
+            this.rbMasculino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbMasculino.Name = "rbMasculino";
-            this.rbMasculino.Size = new System.Drawing.Size(73, 17);
+            this.rbMasculino.Size = new System.Drawing.Size(92, 21);
             this.rbMasculino.TabIndex = 2;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
@@ -174,9 +189,10 @@
             // rbNoBinario
             // 
             this.rbNoBinario.AutoSize = true;
-            this.rbNoBinario.Location = new System.Drawing.Point(172, 15);
+            this.rbNoBinario.Location = new System.Drawing.Point(229, 18);
+            this.rbNoBinario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbNoBinario.Name = "rbNoBinario";
-            this.rbNoBinario.Size = new System.Drawing.Size(73, 17);
+            this.rbNoBinario.Size = new System.Drawing.Size(94, 21);
             this.rbNoBinario.TabIndex = 1;
             this.rbNoBinario.TabStop = true;
             this.rbNoBinario.Text = "No binario";
@@ -185,9 +201,10 @@
             // rbFemenino
             // 
             this.rbFemenino.AutoSize = true;
-            this.rbFemenino.Location = new System.Drawing.Point(16, 15);
+            this.rbFemenino.Location = new System.Drawing.Point(21, 18);
+            this.rbFemenino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbFemenino.Name = "rbFemenino";
-            this.rbFemenino.Size = new System.Drawing.Size(71, 17);
+            this.rbFemenino.Size = new System.Drawing.Size(91, 21);
             this.rbFemenino.TabIndex = 0;
             this.rbFemenino.TabStop = true;
             this.rbFemenino.Text = "Femenino";
@@ -195,18 +212,19 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(353, 163);
+            this.btnCancelar.Location = new System.Drawing.Point(471, 201);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
             this.btnCancelar.TabIndex = 29;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // AltaUsuarios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 202);
+            this.ClientSize = new System.Drawing.Size(603, 249);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label11);
@@ -220,6 +238,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.btnConfirmar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AltaUsuarios";
             this.Text = "AltaUsuarios";
             this.groupBox1.ResumeLayout(false);

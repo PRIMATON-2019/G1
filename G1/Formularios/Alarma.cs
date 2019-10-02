@@ -18,49 +18,58 @@ namespace G1.Formularios
         public Alarma()
         {
             InitializeComponent();
-            Eventos event1 = new Eventos();
-            //String nombre = event1.Detalles.informacion.Nombre;
-            DateTime today = DateTime.Now;
-            DateTime finishRiego = DateTime.Now;
-            DateTime finishPoda = DateTime.Now;
-            DateTime finishCocecha = DateTime.Now;
-
-            //Ejemplos de nombres de productos
-
-            if (event1.Detalles.informacion.Nombre == "zanahoria")
-            {
-                finishRiego = today.AddDays(3);
-                finishPoda = today.AddDays(40);
-                finishCocecha = today.AddDays(90);
-            }
-            if (event1.Detalles.informacion.Nombre == "papa")
-            {
-
-                finishRiego = today.AddDays(2);
-                finishPoda = today.AddDays(54);
-                finishCocecha = today.AddDays(105);
-
-            }
-
-
-            // EJEMPLOS DE CARGA
-            for (int i = 0; i < 3; i++)
-            {
-
-                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[0].getTipeOfAlert(), event1.Fecha, finishRiego);
-                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[1].getTipeOfAlert(), event1.Fecha, finishPoda);
-                dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[2].getTipeOfAlert(), event1.Fecha, finishCocecha);
-                
-            }
-
         }
-
-        
-        private void Bt_atras_Click(object sender, EventArgs e)
-        {
-            MenuInicial menu = new MenuInicial();
-            menu.Show();
-            this.Hide();         
-        }      
     }
 }
+        //    //Eventos event1 = new Eventos();
+        //    ////String nombre = event1.Detalles.informacion.Nombre;
+        //    //DateTime today = DateTime.Now;
+        //    //DateTime finishRiego = DateTime.Now;
+        //    //DateTime finishPoda = DateTime.Now;
+        //    //DateTime finishCocecha = DateTime.Now;
+
+        //    ////Ejemplos de nombres de productos
+
+        //    //if (event1.Detalles.informacion.Nombre == "zanahoria")
+        //    //{
+        //    //    finishRiego = today.AddDays(3);
+        //    //    finishPoda = today.AddDays(40);
+        //    //    finishCocecha = today.AddDays(90);
+        //    //}
+        //    //if (event1.Detalles.informacion.Nombre == "papa")
+        //    //{
+
+        //    //    finishRiego = today.AddDays(2);
+        //    //    finishPoda = today.AddDays(54);
+        //    //    finishCocecha = today.AddDays(105);
+
+        //    //}
+
+
+        //    // EJEMPLOS DE CARGA
+        //    //        for (int i = 0; i < 3; i++)
+        //    //        {
+
+        //    //            dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[0].getTipeOfAlert(), event1.Fecha, finishRiego);
+        //    //            dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[1].getTipeOfAlert(), event1.Fecha, finishPoda);
+        //    //            dataGridView1.Rows.Add(event1.Detalles.informacion.Nombre, event1.Alertas[2].getTipeOfAlert(), event1.Fecha, finishCocecha);
+
+        //    //        }
+
+        //    //    }
+
+
+        //    private void Bt_atras_Click(object sender, EventArgs e)
+        //    {
+        //        //        MenuInicial menu = new MenuInicial();
+        //        //        menu.Show();
+        //        //        this.Hide();         
+        //    }
+
+        //    private void Alarma_Load(object sender, EventArgs e)
+        //    {
+
+        //    }
+        //    //
+        //}
+

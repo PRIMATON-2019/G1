@@ -20,18 +20,18 @@ namespace G1.Formularios
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string[] columnas = { "Nombre", "TipoCultivo", "Familia", "Subfamilia", "Genero" };
-
-            Persistencia pd = new Persistencia(5, columnas, "cultivos");
-            string[] datos = {
-                "NombreCultivo",
-                "TipoCultivo",
-                "Familia",
-                "Subfamilia",
-                "Genero"
-            };
-            pd.CargaDatos(datos, 5, columnas);
+            
         }
 
+        private void BtnAgregarEvento_Click(object sender, EventArgs e)
+        {
+            string[] columnas = { "Nombre", "TipoCultivo", "Riego", "Raleo", "Fertilizacion", "Cosecha"};
+
+            Persistencia pd = new Persistencia(6, columnas, "cultivos");
+            string[] datos = {
+                txtNombre.Text, txtTipoCultivo.Text, txtRiego.Text, txtRaleo.Text, txtFertilizo.Text, txtCosecho.Text
+            };
+            pd.CargaDatos(datos, 6, columnas);
+        }
     }
 }
