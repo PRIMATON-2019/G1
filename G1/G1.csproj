@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="Clases\Modelos\DetalleEventos.cs" />
     <Compile Include="Clases\Modelos\Eventos.cs" />
-    <Compile Include="Clases\Modelos\Informacion.cs" />
+    <Compile Include="Clases\Modelos\Cultivos.cs" />
     <Compile Include="Clases\Modelos\Empresas.cs" />
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
@@ -73,6 +73,12 @@
     </Compile>
     <Compile Include="Formularios\AltaUsuarios.Designer.cs">
       <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Form_Cultivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Form_Cultivos.Designer.cs">
+      <DependentUpon>Form_Cultivos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Seguimiento.cs">
       <SubType>Form</SubType>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\AltaUsuarios.resx">
       <DependentUpon>AltaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Form_Cultivos.resx">
+      <DependentUpon>Form_Cultivos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Seguimiento.resx">
       <DependentUpon>Seguimiento.cs</DependentUpon>

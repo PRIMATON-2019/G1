@@ -49,6 +49,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.cbAlarmas = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,14 +64,13 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.btnAgregarEvento = new System.Windows.Forms.Button();
-            this.btnNuevoEvento = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbAlarmas = new System.Windows.Forms.CheckBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -250,7 +250,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(796, 542);
+            this.panel5.Size = new System.Drawing.Size(865, 439);
             this.panel5.TabIndex = 7;
             // 
             // panel6
@@ -262,17 +262,27 @@
             this.panel6.Controls.Add(this.cbUsuarios);
             this.panel6.Controls.Add(this.dtpFechaEvento);
             this.panel6.Controls.Add(this.cbTipoEvento);
+            this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label18);
             this.panel6.Controls.Add(this.label19);
             this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.btnAgregarEvento);
-            this.panel6.Controls.Add(this.btnNuevoEvento);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(796, 542);
+            this.panel6.Size = new System.Drawing.Size(865, 439);
             this.panel6.TabIndex = 8;
+            // 
+            // cbAlarmas
+            // 
+            this.cbAlarmas.AutoSize = true;
+            this.cbAlarmas.Location = new System.Drawing.Point(643, 12);
+            this.cbAlarmas.Name = "cbAlarmas";
+            this.cbAlarmas.Size = new System.Drawing.Size(207, 17);
+            this.cbAlarmas.TabIndex = 20;
+            this.cbAlarmas.Text = "¿Desea generar alarmas automaticas?";
+            this.cbAlarmas.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -282,9 +292,9 @@
             this.Column4,
             this.Column3,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 151);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(778, 379);
+            this.dataGridView1.Size = new System.Drawing.Size(838, 326);
             this.dataGridView1.TabIndex = 15;
             // 
             // Column2
@@ -309,16 +319,14 @@
             // 
             // cbTipoCultivo
             // 
-            this.cbTipoCultivo.Enabled = false;
             this.cbTipoCultivo.FormattingEnabled = true;
-            this.cbTipoCultivo.Location = new System.Drawing.Point(15, 107);
+            this.cbTipoCultivo.Location = new System.Drawing.Point(218, 68);
             this.cbTipoCultivo.Name = "cbTipoCultivo";
-            this.cbTipoCultivo.Size = new System.Drawing.Size(161, 21);
+            this.cbTipoCultivo.Size = new System.Drawing.Size(171, 21);
             this.cbTipoCultivo.TabIndex = 18;
             // 
             // cbUsuarios
             // 
-            this.cbUsuarios.Enabled = false;
             this.cbUsuarios.FormattingEnabled = true;
             this.cbUsuarios.Items.AddRange(new object[] {
             "Siembra",
@@ -327,22 +335,20 @@
             "Cosecha",
             "Raleo",
             "Curación"});
-            this.cbUsuarios.Location = new System.Drawing.Point(182, 107);
+            this.cbUsuarios.Location = new System.Drawing.Point(395, 68);
             this.cbUsuarios.Name = "cbUsuarios";
             this.cbUsuarios.Size = new System.Drawing.Size(173, 21);
             this.cbUsuarios.TabIndex = 19;
             // 
             // dtpFechaEvento
             // 
-            this.dtpFechaEvento.Enabled = false;
-            this.dtpFechaEvento.Location = new System.Drawing.Point(156, 68);
+            this.dtpFechaEvento.Location = new System.Drawing.Point(12, 69);
             this.dtpFechaEvento.Name = "dtpFechaEvento";
             this.dtpFechaEvento.Size = new System.Drawing.Size(200, 20);
             this.dtpFechaEvento.TabIndex = 17;
             // 
             // cbTipoEvento
             // 
-            this.cbTipoEvento.Enabled = false;
             this.cbTipoEvento.FormattingEnabled = true;
             this.cbTipoEvento.Items.AddRange(new object[] {
             "Siembra",
@@ -351,7 +357,7 @@
             "Cosecha",
             "Raleo",
             "Curación"});
-            this.cbTipoEvento.Location = new System.Drawing.Point(15, 67);
+            this.cbTipoEvento.Location = new System.Drawing.Point(574, 68);
             this.cbTipoEvento.Name = "cbTipoEvento";
             this.cbTipoEvento.Size = new System.Drawing.Size(135, 21);
             this.cbTipoEvento.TabIndex = 16;
@@ -359,7 +365,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(153, 51);
+            this.label17.Location = new System.Drawing.Point(9, 51);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(90, 13);
             this.label17.TabIndex = 9;
@@ -368,7 +374,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(179, 91);
+            this.label18.Location = new System.Drawing.Point(392, 52);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(115, 13);
             this.label18.TabIndex = 10;
@@ -377,7 +383,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(12, 91);
+            this.label19.Location = new System.Drawing.Point(215, 52);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(78, 13);
             this.label19.TabIndex = 11;
@@ -386,7 +392,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(15, 51);
+            this.label20.Location = new System.Drawing.Point(574, 51);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(79, 13);
             this.label20.TabIndex = 12;
@@ -394,23 +400,13 @@
             // 
             // btnAgregarEvento
             // 
-            this.btnAgregarEvento.Location = new System.Drawing.Point(656, 105);
+            this.btnAgregarEvento.Location = new System.Drawing.Point(722, 65);
             this.btnAgregarEvento.Name = "btnAgregarEvento";
             this.btnAgregarEvento.Size = new System.Drawing.Size(128, 23);
             this.btnAgregarEvento.TabIndex = 14;
-            this.btnAgregarEvento.Text = "Agregar avento";
+            this.btnAgregarEvento.Text = "Agregar cultivo";
             this.btnAgregarEvento.UseVisualStyleBackColor = true;
             this.btnAgregarEvento.Click += new System.EventHandler(this.BtnAgregarEvento_Click);
-            // 
-            // btnNuevoEvento
-            // 
-            this.btnNuevoEvento.Location = new System.Drawing.Point(6, 7);
-            this.btnNuevoEvento.Name = "btnNuevoEvento";
-            this.btnNuevoEvento.Size = new System.Drawing.Size(114, 23);
-            this.btnNuevoEvento.TabIndex = 13;
-            this.btnNuevoEvento.Text = "Nuevo evento";
-            this.btnNuevoEvento.UseVisualStyleBackColor = true;
-            this.btnNuevoEvento.Click += new System.EventHandler(this.BtnNuevoEvento_Click);
             // 
             // panel4
             // 
@@ -426,7 +422,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(796, 542);
+            this.panel4.Size = new System.Drawing.Size(865, 439);
             this.panel4.TabIndex = 5;
             // 
             // panel3
@@ -441,7 +437,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(171, 48);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(796, 542);
+            this.panel3.Size = new System.Drawing.Size(865, 439);
             this.panel3.TabIndex = 6;
             // 
             // label1
@@ -470,7 +466,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 48);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 542);
+            this.panel2.Size = new System.Drawing.Size(171, 439);
             this.panel2.TabIndex = 5;
             // 
             // panel1
@@ -479,24 +475,24 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(967, 48);
+            this.panel1.Size = new System.Drawing.Size(1036, 48);
             this.panel1.TabIndex = 4;
             // 
-            // cbAlarmas
+            // label21
             // 
-            this.cbAlarmas.AutoSize = true;
-            this.cbAlarmas.Location = new System.Drawing.Point(377, 69);
-            this.cbAlarmas.Name = "cbAlarmas";
-            this.cbAlarmas.Size = new System.Drawing.Size(207, 17);
-            this.cbAlarmas.TabIndex = 20;
-            this.cbAlarmas.Text = "¿Desea generar alarmas automaticas?";
-            this.cbAlarmas.UseVisualStyleBackColor = true;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 12);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(295, 33);
+            this.label21.TabIndex = 9;
+            this.label21.Text = "Cultivos Sembrados";
             // 
             // Seguimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 590);
+            this.ClientSize = new System.Drawing.Size(1036, 487);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -559,7 +555,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnAgregarEvento;
-        private System.Windows.Forms.Button btnNuevoEvento;
         private System.Windows.Forms.CheckBox cbAlarmas;
+        private System.Windows.Forms.Label label21;
     }
 }

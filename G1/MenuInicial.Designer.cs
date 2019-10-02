@@ -43,24 +43,15 @@
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.PanelSubmenu = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnopcion3 = new System.Windows.Forms.Button();
-            this.btnopcion2 = new System.Windows.Forms.Button();
-            this.btnopcion1 = new System.Windows.Forms.Button();
             this.btnSeguimiento = new System.Windows.Forms.Button();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.ttmensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.button4 = new System.Windows.Forms.Button();
             this.panelArriba.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -71,7 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.panel2.SuspendLayout();
-            this.PanelSubmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,12 +201,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel2.Controls.Add(this.PanelSubmenu);
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.btnSeguimiento);
-            this.panel2.Controls.Add(this.panel11);
-            this.panel2.Controls.Add(this.panel10);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.button1);
@@ -227,92 +214,6 @@
             this.panel2.Size = new System.Drawing.Size(172, 573);
             this.panel2.TabIndex = 1;
             // 
-            // PanelSubmenu
-            // 
-            this.PanelSubmenu.Controls.Add(this.panel15);
-            this.PanelSubmenu.Controls.Add(this.panel14);
-            this.PanelSubmenu.Controls.Add(this.panel13);
-            this.PanelSubmenu.Controls.Add(this.btnopcion3);
-            this.PanelSubmenu.Controls.Add(this.btnopcion2);
-            this.PanelSubmenu.Controls.Add(this.btnopcion1);
-            this.PanelSubmenu.Location = new System.Drawing.Point(12, 318);
-            this.PanelSubmenu.Name = "PanelSubmenu";
-            this.PanelSubmenu.Size = new System.Drawing.Size(160, 113);
-            this.PanelSubmenu.TabIndex = 7;
-            this.PanelSubmenu.Visible = false;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Chocolate;
-            this.panel15.Location = new System.Drawing.Point(3, 39);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(10, 35);
-            this.panel15.TabIndex = 8;
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.Chocolate;
-            this.panel14.Location = new System.Drawing.Point(3, 74);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(10, 35);
-            this.panel14.TabIndex = 7;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.Chocolate;
-            this.panel13.Location = new System.Drawing.Point(3, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(10, 35);
-            this.panel13.TabIndex = 6;
-            // 
-            // btnopcion3
-            // 
-            this.btnopcion3.FlatAppearance.BorderSize = 0;
-            this.btnopcion3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnopcion3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.btnopcion3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnopcion3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopcion3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnopcion3.Location = new System.Drawing.Point(12, 74);
-            this.btnopcion3.Name = "btnopcion3";
-            this.btnopcion3.Size = new System.Drawing.Size(148, 36);
-            this.btnopcion3.TabIndex = 10;
-            this.btnopcion3.Text = "opcion3";
-            this.btnopcion3.UseVisualStyleBackColor = true;
-            this.btnopcion3.Click += new System.EventHandler(this.Btnopcion3_Click);
-            // 
-            // btnopcion2
-            // 
-            this.btnopcion2.FlatAppearance.BorderSize = 0;
-            this.btnopcion2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnopcion2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.btnopcion2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnopcion2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopcion2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnopcion2.Location = new System.Drawing.Point(15, 39);
-            this.btnopcion2.Name = "btnopcion2";
-            this.btnopcion2.Size = new System.Drawing.Size(145, 29);
-            this.btnopcion2.TabIndex = 9;
-            this.btnopcion2.Text = "opcion2";
-            this.btnopcion2.UseVisualStyleBackColor = true;
-            this.btnopcion2.Click += new System.EventHandler(this.Btnopcion2_Click);
-            // 
-            // btnopcion1
-            // 
-            this.btnopcion1.FlatAppearance.BorderSize = 0;
-            this.btnopcion1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnopcion1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
-            this.btnopcion1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnopcion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnopcion1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnopcion1.Location = new System.Drawing.Point(15, 3);
-            this.btnopcion1.Name = "btnopcion1";
-            this.btnopcion1.Size = new System.Drawing.Size(145, 35);
-            this.btnopcion1.TabIndex = 8;
-            this.btnopcion1.Text = "opcion1";
-            this.btnopcion1.UseVisualStyleBackColor = true;
-            this.btnopcion1.Click += new System.EventHandler(this.Btnopcion1_Click);
-            // 
             // btnSeguimiento
             // 
             this.btnSeguimiento.FlatAppearance.BorderSize = 0;
@@ -321,29 +222,13 @@
             this.btnSeguimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguimiento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSeguimiento.Location = new System.Drawing.Point(9, 288);
+            this.btnSeguimiento.Location = new System.Drawing.Point(12, 285);
             this.btnSeguimiento.Name = "btnSeguimiento";
             this.btnSeguimiento.Size = new System.Drawing.Size(160, 33);
             this.btnSeguimiento.TabIndex = 6;
             this.btnSeguimiento.Text = "Seguimiento";
             this.btnSeguimiento.UseVisualStyleBackColor = true;
             this.btnSeguimiento.Click += new System.EventHandler(this.BtnSeguimiento_Click);
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Chocolate;
-            this.panel11.Location = new System.Drawing.Point(0, 285);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(10, 35);
-            this.panel11.TabIndex = 5;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Chocolate;
-            this.panel10.Location = new System.Drawing.Point(0, 244);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(10, 35);
-            this.panel10.TabIndex = 4;
             // 
             // button3
             // 
@@ -360,14 +245,6 @@
             this.button3.Text = "Alarmas";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Chocolate;
-            this.panel9.Location = new System.Drawing.Point(0, 205);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(10, 35);
-            this.panel9.TabIndex = 3;
             // 
             // button2
             // 
@@ -388,9 +265,9 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Chocolate;
-            this.panel8.Location = new System.Drawing.Point(0, 168);
+            this.panel8.Location = new System.Drawing.Point(0, 148);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 35);
+            this.panel8.Size = new System.Drawing.Size(10, 425);
             this.panel8.TabIndex = 2;
             // 
             // button1
@@ -433,6 +310,22 @@
             this.ttmensaje.IsBalloon = true;
             this.ttmensaje.Popup += new System.Windows.Forms.PopupEventHandler(this.Ttmensaje_Popup);
             // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chocolate;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(12, 324);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(160, 33);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Cultivos";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            // 
             // MenuInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,7 +349,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.PanelSubmenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
@@ -481,20 +373,11 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSeguimiento;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel PanelSubmenu;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Button btnopcion3;
-        private System.Windows.Forms.Button btnopcion2;
-        private System.Windows.Forms.Button btnopcion1;
         private System.Windows.Forms.ToolTip ttmensaje;
+        private System.Windows.Forms.Button button4;
     }
 }
 

@@ -129,5 +129,11 @@ namespace G1
         {
 
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            Form_Cultivos cultivos = new Form_Cultivos();
+            cultivos.Visible = true;
+        }
     }
 }

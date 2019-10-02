@@ -12,17 +12,35 @@ namespace G1.Formularios
             InitializeComponent();
         }
 
-        private void BtnNuevoEvento_Click(object sender, EventArgs e)
+        private void BtnAgregarEvento_Click(object sender, EventArgs e)
         {
-            cbUsuarios.Enabled = true;
-            cbTipoCultivo.Enabled = true;
-            cbTipoEvento.Enabled = true;
-            dtpFechaEvento.Enabled = true;
+            string[] columnas = { "Fecha", "TipoCultivo", "Responsable", "TipoEvento" };
+
+            Persistencia pd = new Persistencia(4, columnas, "eventos");
+            string[] datos = {
+                dtpFechaEvento.Value.ToString(),
+                cbTipoCultivo.Text,
+                cbUsuarios.Text,
+                cbTipoEvento.Text
+            };
+            pd.CargaDatos(datos, 4, columnas);
 
 
+            if (cbAlarmas.Checked)
+            {
+                MessageBox.Show("Se generaron las alarmas correspondientes");
+                //TODO: Agregar alarmas correspondientes.
+            }
+            ListarEventos();
+
+
+        }
+
+        private void Seguimiento_Load(object sender, EventArgs e)
+        {
+            ListarEventos();
             Persistencia pd = new Persistencia();
-            DataTable ds = pd.BuscarDatos("Usuarios");
-            DataTable dsTiposCultivos = pd.BuscarDatos("Cultivos");
+            DataTable ds = pd.BuscarDatos("usuarios");
             cbUsuarios.Items.Clear();
             if (ds != null)
             {
@@ -31,6 +49,18 @@ namespace G1.Formularios
                     cbUsuarios.Items.Add(ds.Rows[j][1].ToString() + ", " + ds.Rows[j][2]);
                 }
             }
+            Persistencia pdCultivos = new Persistencia();
+            DataTable dsCultivos = pdCultivos.BuscarDatos("eventos");
+            cbUsuarios.Items.Clear();
+            if (dsCultivos != null)
+            {
+                for (int j = 0; j < dsCultivos.Rows.Count; j++)
+                {
+                    cbUsuarios.Items.Add(dsCultivos.Rows[j][1].ToString() + ", " + dsCultivos.Rows[j][2]);
+                }
+            }
+            Persistencia persist = new Persistencia();
+            DataTable dsTiposCultivos = persist.BuscarDatos("cultivos");
             if (dsTiposCultivos != null)
             {
                 cbTipoCultivo.Items.Clear();
@@ -41,57 +71,30 @@ namespace G1.Formularios
                       );
                 }
             }
-        }
-
-        private void BtnAgregarEvento_Click(object sender, EventArgs e)
-        {
-            string[] columnas = { "TipoEvento", "Fecha", "TipoCultivo", "Responsable" };
-
-            Persistencia pd = new Persistencia(4, columnas, "cultivos");
-            string[] datos = {cbTipoEvento.Text,
-                dtpFechaEvento.Value.ToString(),
-                cbTipoCultivo.Text,
-                cbUsuarios.Text
-            };
-            pd.CargaDatos(datos, 4, columnas);
-
-            cbUsuarios.Enabled = false;
-            cbTipoCultivo.Enabled = false;
-            cbTipoEvento.Enabled = false;
-            dtpFechaEvento.Enabled = false;
-            ListarEventos();
-            if (cbAlarmas.Checked)
-            {
-                MessageBox.Show ("Se generaron las alarmas correspondientes");
-                //TODO: Agregar alarmas correspondientes.
-            }
-
-
-        }
-
-        private void Seguimiento_Load(object sender, EventArgs e)
-        {
-            ListarEventos();
 
         }
 
         public void ListarEventos()
         {
             Persistencia pd = new Persistencia();
-            //DataTable ds = pd.BuscarDatos("Usuarios");
-            DataTable dsTiposCultivos = pd.BuscarDatos("Cultivos");
-            // cbUsuarios.Items.Clear();
-
-            dataGridView1.RowCount = 1; 
-            for (int j = 0; j < dsTiposCultivos.Rows.Count; j++)
+            DataTable dsTiposCultivos = pd.BuscarDatos("eventos");
+            try
             {
-                dataGridView1.Rows.Add(
+                dataGridView1.RowCount = 1;
+                for (int j = 0; j < dsTiposCultivos.Rows.Count; j++)
+                {
+                    dataGridView1.Rows.Add(
 
-                        dsTiposCultivos.Rows[j][0].ToString(),
-                        dsTiposCultivos.Rows[j][1].ToString(),
-                        dsTiposCultivos.Rows[j][2].ToString(),
-                        dsTiposCultivos.Rows[j][3].ToString()
-                      );
+                            dsTiposCultivos.Rows[j][0].ToString(),
+                            dsTiposCultivos.Rows[j][1].ToString(),
+                            dsTiposCultivos.Rows[j][2].ToString(),
+                            dsTiposCultivos.Rows[j][3].ToString()
+                          );
+                }
+            }
+            catch (Exception)
+            {
+                // MessageBox.Show("No se pueden generar eventos sin antes cargar Cultivos");             
             }
         }
     }
