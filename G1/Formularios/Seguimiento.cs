@@ -28,6 +28,41 @@ namespace G1.Formularios
 
             if (cbAlarmas.Checked)
             {
+                string[] columnas2 = {"TipoCultivo" , "Nombre de alerta", "Fecha alerta","Fin alerta"};
+                Persistencia pd2 = new Persistencia(4, columnas2, "alertas");
+                DateTime DateRiego = new DateTime();
+                DateTime DateRaleo = new DateTime();
+                DateTime DateSiembra = new DateTime();
+                DateRiego = DateTime.Now.AddDays(3);
+                DateRaleo = dtpFechaEvento.Value.AddDays(43);
+                DateSiembra = dtpFechaEvento.Value.AddDays(90);
+
+                string[] alarma1 =
+                {
+                    cbTipoCultivo.Text,
+                    "Riego",
+                    dtpFechaEvento.Value.ToString(),
+                    DateRiego.ToString(),
+                };
+                string[] alarma2 =
+{
+                    cbTipoCultivo.Text,
+                    "Raleo",
+                    dtpFechaEvento.Value.ToString(),
+                    DateRaleo.ToString(),
+                };
+                string[] alarma3 =
+{
+                    cbTipoCultivo.Text,
+                    "Siembra",
+                    dtpFechaEvento.Value.ToString(),
+                    DateSiembra.ToString(),
+                };
+
+                pd2.CargaDatos(alarma1, 4, columnas2);
+                pd2.CargaDatos(alarma2, 4, columnas2);
+                pd2.CargaDatos(alarma3, 4, columnas2);
+
                 MessageBox.Show("Se generaron las alarmas correspondientes");
                 //TODO: Agregar alarmas correspondientes.
             }
