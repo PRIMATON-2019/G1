@@ -14,7 +14,7 @@ namespace G1.Formularios
 {
     public partial class Alarma : Form
     {
-        
+
 
         public Alarma()
         {
@@ -49,16 +49,43 @@ namespace G1.Formularios
                             dsTiposAlarmas.Rows[j][0].ToString(),
                             dsTiposAlarmas.Rows[j][1].ToString(),
                             dsTiposAlarmas.Rows[j][2].ToString(),
-                            dsTiposAlarmas.Rows[j][3].ToString()
-                          );
+                            dsTiposAlarmas.Rows[j][3].ToString(),
+                            false
+                          ) ;
                 }
             }
             catch (Exception)
             {
                  MessageBox.Show("No se pudieron generar las alertas");             
             }
-
 	}
+
+
+        private void ActualizaAlarma_Click(object sender, EventArgs e)
+        {
+            AlarmasViejas();
+        }
+
+        public void AlarmasViejas()
+        {
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                bool check = (bool)dataGridView1.Rows[i].Cells[4].Value;
+
+                if (check == true)
+                {
+                    dataGridView2.Rows.Add(
+                    dataGridView1.Rows[i].Cells[0].Value.ToString(),
+                    dataGridView1.Rows[i].Cells[1].Value.ToString(),
+                    dataGridView1.Rows[i].Cells[2].Value.ToString(),
+                    dataGridView1.Rows[i].Cells[3].Value.ToString()
+                        );
+                    dataGridView1.Rows.RemoveAt(i);
+
+                }
+            }
+
+        }
 
     }
     }

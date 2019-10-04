@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +42,8 @@
             this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ready = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ActualizaAlarma = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -59,12 +59,11 @@
             this.col_tipo,
             this.col_inicio,
             this.col_fin,
-            this.Ready});
-            this.dataGridView1.Location = new System.Drawing.Point(50, 69);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Check});
+            this.dataGridView1.Location = new System.Drawing.Point(33, 45);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(876, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(656, 203);
             this.dataGridView1.TabIndex = 9;
             // 
             // dataGridView2
@@ -78,11 +77,10 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(50, 441);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView2.Location = new System.Drawing.Point(33, 287);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(876, 246);
+            this.dataGridView2.Size = new System.Drawing.Size(656, 160);
             this.dataGridView2.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -118,10 +116,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Enabled = false;
             this.button1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button1.Location = new System.Drawing.Point(136, 391);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(91, 254);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(602, 41);
+            this.button1.Size = new System.Drawing.Size(401, 27);
             this.button1.TabIndex = 11;
             this.button1.Text = "Ultimas Alarmas";
             this.button1.UseCompatibleTextRendering = true;
@@ -132,10 +129,9 @@
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button2.Enabled = false;
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(136, 19);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(91, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(602, 41);
+            this.button2.Size = new System.Drawing.Size(401, 27);
             this.button2.TabIndex = 12;
             this.button2.Text = "Proximas Alarmas";
             this.button2.UseCompatibleTextRendering = true;
@@ -143,10 +139,9 @@
             // 
             // bt_atras
             // 
-            this.bt_atras.Location = new System.Drawing.Point(980, 40);
-            this.bt_atras.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bt_atras.Location = new System.Drawing.Point(662, 12);
             this.bt_atras.Name = "bt_atras";
-            this.bt_atras.Size = new System.Drawing.Size(189, 41);
+            this.bt_atras.Size = new System.Drawing.Size(126, 27);
             this.bt_atras.TabIndex = 13;
             this.bt_atras.Text = "Atras";
             this.bt_atras.UseCompatibleTextRendering = true;
@@ -157,10 +152,9 @@
             this.label1.AccessibleName = "label1";
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(764, 401);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(509, 261);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 20);
+            this.label1.Size = new System.Drawing.Size(108, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "ULTIMAS ALARMAS";
             // 
@@ -196,31 +190,33 @@
             this.col_fin.Name = "col_fin";
             this.col_fin.Width = 125;
             // 
-            // Ready
+            // Check
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.Ready.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Ready.FillWeight = 30F;
-            this.Ready.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.Ready.HeaderText = "Check";
-            this.Ready.Name = "Ready";
-            this.Ready.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Ready.ToolTipText = "Click para mostrar que fue realizada";
-            this.Ready.Width = 70;
+            this.Check.HeaderText = "Check";
+            this.Check.Name = "Check";
+            // 
+            // ActualizaAlarma
+            // 
+            this.ActualizaAlarma.Location = new System.Drawing.Point(695, 123);
+            this.ActualizaAlarma.Name = "ActualizaAlarma";
+            this.ActualizaAlarma.Size = new System.Drawing.Size(93, 34);
+            this.ActualizaAlarma.TabIndex = 15;
+            this.ActualizaAlarma.Text = "Actualizar Alarmas";
+            this.ActualizaAlarma.UseVisualStyleBackColor = true;
+            this.ActualizaAlarma.Click += new System.EventHandler(this.ActualizaAlarma_Click);
             // 
             // Alarma
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ActualizaAlarma);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_atras);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Alarma";
             this.Text = "Alarma";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -245,6 +241,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn col_tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_inicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_fin;
-        private System.Windows.Forms.DataGridViewButtonColumn Ready;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
+        private System.Windows.Forms.Button ActualizaAlarma;
     }
 }
