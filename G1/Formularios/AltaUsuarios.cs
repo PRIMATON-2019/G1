@@ -48,7 +48,7 @@ namespace G1.Formularios
                 usuario.Persona = persona;
                 string[] columnas = { "usuario", "apellido", "nombre", "genero", "clave" };
 
-                Persistencia db = new Persistencia(5, columnas, "Usuarios");
+                Persistencia db = new Persistencia(5, columnas, "usuarios");
                 string[] datos = {
                     usuario.NombreUsuario,
                     usuario.Persona.Apellido,

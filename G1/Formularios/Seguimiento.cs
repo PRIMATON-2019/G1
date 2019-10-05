@@ -84,16 +84,7 @@ namespace G1.Formularios
                     cbUsuarios.Items.Add(ds.Rows[j][1].ToString() + ", " + ds.Rows[j][2]);
                 }
             }
-            Persistencia pdCultivos = new Persistencia();
-            DataTable dsCultivos = pdCultivos.BuscarDatos("eventos");
-            cbUsuarios.Items.Clear();
-            if (dsCultivos != null)
-            {
-                for (int j = 0; j < dsCultivos.Rows.Count; j++)
-                {
-                    cbUsuarios.Items.Add(dsCultivos.Rows[j][1].ToString() + ", " + dsCultivos.Rows[j][2]);
-                }
-            }
+
             Persistencia persist = new Persistencia();
             DataTable dsTiposCultivos = persist.BuscarDatos("cultivos");
             if (dsTiposCultivos != null)
