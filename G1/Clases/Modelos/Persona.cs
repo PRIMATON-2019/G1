@@ -12,12 +12,10 @@ namespace G1.Clases.Modelos
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Domicilio { get; set; }
-        public Localidad Localidades { get; set; }
+        public string Localidad { get; set; }
         public string Telefono { get; set; }
         public string Celular { get; set; }
         public string Correo { get; set; }
         public int Genero { get; set; }
-
-
     }
 }

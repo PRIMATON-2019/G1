@@ -29,7 +29,7 @@ namespace G1.Formularios
 
             Persistencia pd = new Persistencia(6, columnas, "cultivos");
             string[] datos = {
-                txtNombre.Text, txtTipoCultivo.Text, txtRiego.Text, txtRaleo.Text, txtFertilizo.Text, txtCosecho.Text
+                txtNombre.Text, comboBox1.Text, txtRiego.Text, txtRaleo.Text, txtFertilizo.Text, txtCosecho.Text
             };
             pd.CargaDatos(datos, 6, columnas);
         }

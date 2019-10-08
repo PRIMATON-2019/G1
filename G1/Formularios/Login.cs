@@ -21,6 +21,7 @@ namespace G1.Formularios
                 lblClave.Text = "Password";
                 btni18n.Text = "Español";
                 lblRecuperarContrasena.Text = "Password recovery";
+                llNuevoUsuario.Text = "Sign Up";
                 btnAceptar.Text = "Accept";
                 btnCancelar.Text = "Cancel";
             }
@@ -29,6 +30,7 @@ namespace G1.Formularios
                 lblCorreo.Text = "Correo electrónico";
                 lblClave.Text = "Clave";
                 lblRecuperarContrasena.Text = "Recuperar clave";
+                llNuevoUsuario.Text = "No tengo usuario";
                 btnAceptar.Text = "Aceptar";
                 btnCancelar.Text = "Cancelar";
                 btni18n.Text = "English";
@@ -55,6 +57,7 @@ namespace G1.Formularios
                         {
                             MenuInicial mi = new MenuInicial();
                             mi.Show();
+                            this.Close();
                         }
                     }
                 }

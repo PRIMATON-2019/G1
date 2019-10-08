@@ -50,18 +50,11 @@
     <Compile Include="Clases\Modelos\DetalleEventos.cs" />
     <Compile Include="Clases\Modelos\Eventos.cs" />
     <Compile Include="Clases\Modelos\Cultivos.cs" />
-    <Compile Include="Clases\Modelos\Empresas.cs" />
     <Compile Include="Clases\Modelos\Alerta.cs" />
     <Compile Include="Clases\Lista.cs" />
-    <Compile Include="Clases\Modelos\Alumnos.cs" />
-    <Compile Include="Clases\Modelos\Localidad.cs" />
-    <Compile Include="Clases\Modelos\Pais.cs" />
     <Compile Include="Clases\Modelos\Persona.cs" />
-    <Compile Include="Clases\Modelos\Provincia.cs" />
     <Compile Include="Clases\Modelos\Usuario.cs" />
     <Compile Include="Clases\Persistencia.cs" />
-    <Compile Include="Clases\Modelos\Pesticidas.cs" />
-    <Compile Include="Clases\Modelos\Plagas.cs" />
     <Compile Include="Formularios\Alarma.cs">
       <SubType>Form</SubType>
     </Compile>
