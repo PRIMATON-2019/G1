@@ -38,6 +38,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -73,7 +74,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -107,26 +107,29 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(308, 11);
+            this.label17.Location = new System.Drawing.Point(411, 14);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(78, 13);
+            this.label17.Size = new System.Drawing.Size(102, 17);
             this.label17.TabIndex = 9;
             this.label17.Text = "Tipo de Cultivo";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(12, 11);
+            this.label20.Location = new System.Drawing.Point(16, 14);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(94, 13);
+            this.label20.Size = new System.Drawing.Size(124, 17);
             this.label20.TabIndex = 12;
             this.label20.Text = "Nombre de Cultivo";
             // 
             // btnAgregarEvento
             // 
-            this.btnAgregarEvento.Location = new System.Drawing.Point(486, 80);
+            this.btnAgregarEvento.Location = new System.Drawing.Point(648, 98);
+            this.btnAgregarEvento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregarEvento.Name = "btnAgregarEvento";
-            this.btnAgregarEvento.Size = new System.Drawing.Size(128, 23);
+            this.btnAgregarEvento.Size = new System.Drawing.Size(171, 28);
             this.btnAgregarEvento.TabIndex = 14;
             this.btnAgregarEvento.Text = "Agregar cultivo";
             this.btnAgregarEvento.UseVisualStyleBackColor = true;
@@ -145,8 +148,9 @@
             this.panel4.Controls.Add(this.monthCalendar2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(629, 768);
+            this.panel4.Size = new System.Drawing.Size(839, 644);
             this.panel4.TabIndex = 5;
             // 
             // panel5
@@ -162,8 +166,9 @@
             this.panel5.Controls.Add(this.monthCalendar3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(629, 768);
+            this.panel5.Size = new System.Drawing.Size(839, 644);
             this.panel5.TabIndex = 7;
             // 
             // panel6
@@ -186,16 +191,33 @@
             this.panel6.Controls.Add(this.btnAgregarEvento);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(629, 768);
+            this.panel6.Size = new System.Drawing.Size(839, 644);
             this.panel6.TabIndex = 8;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Hortalizas",
+            "Frutas",
+            "Flores",
+            "Raices",
+            "Hojas"});
+            this.comboBox1.Location = new System.Drawing.Point(420, 37);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(397, 24);
+            this.comboBox1.TabIndex = 30;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(18, 123);
+            this.textBox9.Location = new System.Drawing.Point(24, 151);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(596, 141);
+            this.textBox9.Size = new System.Drawing.Size(793, 101);
             this.textBox9.TabIndex = 29;
             this.textBox9.Text = "eL TOMATE SE SIEMBRA EN CLIMAS CALIDOS, DE SEPT-DIC, A POCA PROF. Y EN DIAS DE MU" +
     "HO SOL";
@@ -203,76 +225,85 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(133, 66);
+            this.label21.Location = new System.Drawing.Point(177, 81);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(69, 13);
+            this.label21.Size = new System.Drawing.Size(92, 17);
             this.label21.TabIndex = 25;
             this.label21.Text = "Fertilizo cada";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(359, 66);
+            this.label22.Location = new System.Drawing.Point(479, 81);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(77, 13);
+            this.label22.Size = new System.Drawing.Size(102, 17);
             this.label22.TabIndex = 26;
             this.label22.Text = "Cosechar a los";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(250, 66);
+            this.label23.Location = new System.Drawing.Point(333, 81);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 13);
+            this.label23.Size = new System.Drawing.Size(79, 17);
             this.label23.TabIndex = 27;
             this.label23.Text = "Raleo a los";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(15, 66);
+            this.label24.Location = new System.Drawing.Point(20, 81);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(62, 13);
+            this.label24.Size = new System.Drawing.Size(80, 17);
             this.label24.TabIndex = 28;
             this.label24.Text = "Riego cada";
             // 
             // txtCosecho
             // 
-            this.txtCosecho.Location = new System.Drawing.Point(362, 83);
+            this.txtCosecho.Location = new System.Drawing.Point(483, 102);
+            this.txtCosecho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCosecho.Name = "txtCosecho";
-            this.txtCosecho.Size = new System.Drawing.Size(100, 20);
+            this.txtCosecho.Size = new System.Drawing.Size(132, 22);
             this.txtCosecho.TabIndex = 21;
             this.txtCosecho.Text = "90";
             // 
             // txtRaleo
             // 
-            this.txtRaleo.Location = new System.Drawing.Point(253, 83);
+            this.txtRaleo.Location = new System.Drawing.Point(337, 102);
+            this.txtRaleo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRaleo.Name = "txtRaleo";
-            this.txtRaleo.Size = new System.Drawing.Size(100, 20);
+            this.txtRaleo.Size = new System.Drawing.Size(132, 22);
             this.txtRaleo.TabIndex = 22;
             this.txtRaleo.Text = "25";
             // 
             // txtFertilizo
             // 
-            this.txtFertilizo.Location = new System.Drawing.Point(136, 83);
+            this.txtFertilizo.Location = new System.Drawing.Point(181, 102);
+            this.txtFertilizo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFertilizo.Name = "txtFertilizo";
-            this.txtFertilizo.Size = new System.Drawing.Size(100, 20);
+            this.txtFertilizo.Size = new System.Drawing.Size(132, 22);
             this.txtFertilizo.TabIndex = 23;
             this.txtFertilizo.Text = "10";
             // 
             // txtRiego
             // 
-            this.txtRiego.Location = new System.Drawing.Point(18, 83);
+            this.txtRiego.Location = new System.Drawing.Point(24, 102);
+            this.txtRiego.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtRiego.Name = "txtRiego";
-            this.txtRiego.Size = new System.Drawing.Size(100, 20);
+            this.txtRiego.Size = new System.Drawing.Size(132, 22);
             this.txtRiego.TabIndex = 24;
             this.txtRiego.Text = "2";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(15, 30);
+            this.txtNombre.Location = new System.Drawing.Point(20, 37);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(292, 20);
+            this.txtNombre.Size = new System.Drawing.Size(388, 22);
             this.txtNombre.TabIndex = 20;
             this.txtNombre.Text = "Tomates";
             // 
@@ -284,10 +315,11 @@
             this.Column4,
             this.Column3,
             this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 290);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 260);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(602, 465);
+            this.dataGridView1.Size = new System.Drawing.Size(794, 367);
             this.dataGridView1.TabIndex = 15;
             // 
             // Column2
@@ -300,122 +332,136 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(392, 37);
+            this.label11.Location = new System.Drawing.Point(523, 46);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.Size = new System.Drawing.Size(57, 17);
             this.label11.TabIndex = 6;
             this.label11.Text = "Sabado";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(344, 37);
+            this.label12.Location = new System.Drawing.Point(459, 46);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(42, 13);
+            this.label12.Size = new System.Drawing.Size(56, 17);
             this.label12.TabIndex = 5;
             this.label12.Text = "Viernes";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(284, 37);
+            this.label13.Location = new System.Drawing.Point(379, 46);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 13);
+            this.label13.Size = new System.Drawing.Size(53, 17);
             this.label13.TabIndex = 4;
             this.label13.Text = "Jueves";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(201, 37);
+            this.label14.Location = new System.Drawing.Point(268, 46);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 13);
+            this.label14.Size = new System.Drawing.Size(68, 17);
             this.label14.TabIndex = 3;
             this.label14.Text = "Miercoles";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(130, 37);
+            this.label15.Location = new System.Drawing.Point(173, 46);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(34, 13);
+            this.label15.Size = new System.Drawing.Size(44, 17);
             this.label15.TabIndex = 2;
             this.label15.Text = "Marte";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(54, 37);
+            this.label16.Location = new System.Drawing.Point(72, 46);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(36, 13);
+            this.label16.Size = new System.Drawing.Size(47, 17);
             this.label16.TabIndex = 1;
             this.label16.Text = "Lunes";
             // 
             // monthCalendar3
             // 
             this.monthCalendar3.CalendarDimensions = new System.Drawing.Size(3, 1);
-            this.monthCalendar3.Location = new System.Drawing.Point(30, 341);
+            this.monthCalendar3.Location = new System.Drawing.Point(40, 420);
+            this.monthCalendar3.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar3.Name = "monthCalendar3";
             this.monthCalendar3.TabIndex = 0;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(392, 37);
+            this.label10.Location = new System.Drawing.Point(523, 46);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.Size = new System.Drawing.Size(57, 17);
             this.label10.TabIndex = 6;
             this.label10.Text = "Sabado";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(344, 37);
+            this.label9.Location = new System.Drawing.Point(459, 46);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.Size = new System.Drawing.Size(56, 17);
             this.label9.TabIndex = 5;
             this.label9.Text = "Viernes";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(284, 37);
+            this.label5.Location = new System.Drawing.Point(379, 46);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(41, 13);
+            this.label5.Size = new System.Drawing.Size(53, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Jueves";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(201, 37);
+            this.label6.Location = new System.Drawing.Point(268, 46);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 13);
+            this.label6.Size = new System.Drawing.Size(68, 17);
             this.label6.TabIndex = 3;
             this.label6.Text = "Miercoles";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(130, 37);
+            this.label7.Location = new System.Drawing.Point(173, 46);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 13);
+            this.label7.Size = new System.Drawing.Size(44, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Marte";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(54, 37);
+            this.label8.Location = new System.Drawing.Point(72, 46);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(36, 13);
+            this.label8.Size = new System.Drawing.Size(47, 17);
             this.label8.TabIndex = 1;
             this.label8.Text = "Lunes";
             // 
             // monthCalendar2
             // 
             this.monthCalendar2.CalendarDimensions = new System.Drawing.Size(3, 1);
-            this.monthCalendar2.Location = new System.Drawing.Point(30, 341);
+            this.monthCalendar2.Location = new System.Drawing.Point(40, 420);
+            this.monthCalendar2.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar2.Name = "monthCalendar2";
             this.monthCalendar2.TabIndex = 0;
             // 
@@ -429,51 +475,57 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.monthCalendar1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(171, 48);
+            this.panel3.Location = new System.Drawing.Point(228, 59);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(629, 768);
+            this.panel3.Size = new System.Drawing.Size(839, 644);
             this.panel3.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(284, 37);
+            this.label4.Location = new System.Drawing.Point(379, 46);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(53, 17);
             this.label4.TabIndex = 4;
             this.label4.Text = "Jueves";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(201, 37);
+            this.label3.Location = new System.Drawing.Point(268, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 13);
+            this.label3.Size = new System.Drawing.Size(68, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Miercoles";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(130, 37);
+            this.label2.Location = new System.Drawing.Point(173, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Marte";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 37);
+            this.label1.Location = new System.Drawing.Point(72, 46);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.Size = new System.Drawing.Size(47, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lunes";
             // 
             // monthCalendar1
             // 
             this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 1);
-            this.monthCalendar1.Location = new System.Drawing.Point(30, 341);
+            this.monthCalendar1.Location = new System.Drawing.Point(40, 420);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 
@@ -481,8 +533,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(228, 158);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -491,9 +544,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Chocolate;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(171, 0);
+            this.panel1.Location = new System.Drawing.Point(228, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(629, 48);
+            this.panel1.Size = new System.Drawing.Size(839, 59);
             this.panel1.TabIndex = 7;
             // 
             // panel2
@@ -502,32 +556,20 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 816);
+            this.panel2.Size = new System.Drawing.Size(228, 703);
             this.panel2.TabIndex = 8;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Hortalizas",
-            "Frutas",
-            "Flores",
-            "Raices",
-            "Hojas"});
-            this.comboBox1.Location = new System.Drawing.Point(315, 30);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(299, 21);
-            this.comboBox1.TabIndex = 30;
             // 
             // Form_Cultivos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 816);
+            this.ClientSize = new System.Drawing.Size(1067, 703);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form_Cultivos";
             this.Text = "Cultivos";
             this.panel4.ResumeLayout(false);
