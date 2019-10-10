@@ -97,7 +97,6 @@ namespace G1.Formularios
                 pd2.CargaDatos(alarma3, 4, columnas2);
 
                 MessageBox.Show("Se generaron las alarmas correspondientes");
-                //TODO: Agregar alarmas correspondientes.
             }
             ListarEventos();
 
