@@ -85,36 +85,6 @@
     <Compile Include="Formularios\Calendario.Designer.cs">
       <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Semillas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Semillas.Designer.cs">
-      <DependentUpon>Semillas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Flores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Flores.Designer.cs">
-      <DependentUpon>Flores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Frutas_Y_Hortalizas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Frutas_Y_Hortalizas.Designer.cs">
-      <DependentUpon>Frutas_Y_Hortalizas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Hojas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Hojas.Designer.cs">
-      <DependentUpon>Hojas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Acelga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Acelga.Designer.cs">
-      <DependentUpon>Acelga.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,21 +119,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Semillas.resx">
-      <DependentUpon>Semillas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Flores.resx">
-      <DependentUpon>Flores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Frutas_Y_Hortalizas.resx">
-      <DependentUpon>Frutas_Y_Hortalizas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Hojas.resx">
-      <DependentUpon>Hojas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Acelga.resx">
-      <DependentUpon>Acelga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

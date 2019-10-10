@@ -10,24 +10,17 @@ namespace G1
         public MenuInicial()
         {
             InitializeComponent();
-            this.ttmensaje.SetToolTip(this.button1, "Muestra el calendario lunar con su repectiva guia para sembrar");
-            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendad para plantar ");
-            this.ttmensaje.SetToolTip(this.button3, "Progama alarmas para recordar Actividades en tu Huerta ");
-            this.ttmensaje.SetToolTip(this.button2, "Informacion de cada semilla recomendada para plantar ");
+            this.ttmensaje.SetToolTip(this.btnCalendario, "Muestra el calendario lunar con su repectiva guia para sembrar");
+            this.ttmensaje.SetToolTip(this.btnAlarmas, "Progama alarmas para recordar Actividades en tu Huerta ");
             this.ttmensaje.SetToolTip(this.btnSeguimiento, "Realiza seguimiento de tu Cosecha ");
             this.ttmensaje.SetToolTip(this.pictureBox2, "Cerrar");
             this.ttmensaje.SetToolTip(this.btnRestaurar, "Restaurar");
             this.ttmensaje.SetToolTip(this.btnMininizar, "Minimizar");
-
-
-
-
         }
 
         private void Btncerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
-
         }
 
         private void BtnMaximizar_Click(object sender, EventArgs e)
@@ -35,7 +28,6 @@ namespace G1
             this.WindowState = FormWindowState.Maximized;
             btnMaximizar.Visible = false;
             btnRestaurar.Visible = true;
-
         }
 
         private void BtnRestaurar_Click(object sender, EventArgs e)
@@ -60,80 +52,40 @@ namespace G1
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-
-        }
-
-        private void BtnSeguimiento_Click(object sender, EventArgs e)
-        {
-            //btnSeguimiento.Visible = true;
-            Seguimiento formSeguimiento = new Seguimiento();
-            formSeguimiento.ShowDialog();
-
-
-        }
-
-        private void Btnopcion1_Click(object sender, EventArgs e)
-        {
-            btnSeguimiento.Visible = false;
-        }
-
-        private void Btnopcion2_Click(object sender, EventArgs e)
-        {
-            btnSeguimiento.Visible = false;
-        }
-
-        private void Btnopcion3_Click(object sender, EventArgs e)
-        {
-            btnSeguimiento.Visible = false;
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-            Semillas semillas = new Semillas();
-            semillas.Show();
-            this.Hide();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void MenuInicial_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            Alarma alarma = new Alarma();
-            alarma.Show();
-            this.Hide();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Calendario calendario = new Calendario();
-            calendario.Show();
-            this.Hide();
-        }
-
-        private void UcCalendario2_Load(object sender, EventArgs e)
+        private void CalendarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Calendario cal = new Calendario();
             cal.Show();
         }
 
-        private void Ttmensaje_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
+        private void BtnCultivos_Click(object sender, EventArgs e)
         {
             Form_Cultivos cultivos = new Form_Cultivos();
-            cultivos.Visible = true;
+            cultivos.Show();
+        }
+
+        private void BtnSeguimiento_Click(object sender, EventArgs e)
+        {
+            Seguimiento formSeguimiento = new Seguimiento();
+            formSeguimiento.ShowDialog();
+        }
+
+        private void BtnAlarmas_Click(object sender, EventArgs e)
+        {
+            Alarma alarma = new Alarma();
+            alarma.Show();
+        }
+
+        private void BtnCalendario_Click(object sender, EventArgs e)
+        {
+            Calendario calendario = new Calendario();
+            calendario.Show();
         }
     }
 }

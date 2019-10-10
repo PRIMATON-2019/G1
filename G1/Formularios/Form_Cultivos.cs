@@ -18,20 +18,29 @@ namespace G1.Formularios
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void BtnAgregarEvento_Click(object sender, EventArgs e)
         {
-            string[] columnas = { "Nombre", "TipoCultivo", "Riego", "Raleo", "Fertilizacion", "Cosecha"};
-
-            Persistencia pd = new Persistencia(6, columnas, "cultivos");
-            string[] datos = {
-                txtNombre.Text, comboBox1.Text, txtRiego.Text, txtRaleo.Text, txtFertilizo.Text, txtCosecho.Text
+            string[] columnas = {
+                "Nombre",
+                "TipoCultivo",
+                "Riego",
+                "Raleo",
+                "Fertilizacion",
+                "Cosecha",
+                "Observaciones"
             };
-            pd.CargaDatos(datos, 6, columnas);
+
+            Persistencia pd = new Persistencia(7, columnas, "cultivos");
+            string[] datos = {
+                txtNombre.Text,
+                comboBox1.Text,
+                txtRiego.Text,
+                txtRaleo.Text,
+                txtFertilizo.Text,
+                txtCosecho.Text,
+                txtDescripción.Text
+            };
+            pd.CargaDatos(datos, 7, columnas);
         }
     }
 }

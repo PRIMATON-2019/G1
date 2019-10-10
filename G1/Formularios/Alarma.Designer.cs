@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.col_prod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,11 +43,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.bt_atras = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.col_prod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ActualizaAlarma = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -66,6 +66,43 @@
             this.dataGridView1.Size = new System.Drawing.Size(656, 203);
             this.dataGridView1.TabIndex = 9;
             // 
+            // col_prod
+            // 
+            this.col_prod.Frozen = true;
+            this.col_prod.HeaderText = "Productos";
+            this.col_prod.MinimumWidth = 6;
+            this.col_prod.Name = "col_prod";
+            this.col_prod.Width = 125;
+            // 
+            // col_tipo
+            // 
+            this.col_tipo.Frozen = true;
+            this.col_tipo.HeaderText = "Tipo de Alarma";
+            this.col_tipo.MinimumWidth = 6;
+            this.col_tipo.Name = "col_tipo";
+            this.col_tipo.Width = 125;
+            // 
+            // col_inicio
+            // 
+            this.col_inicio.Frozen = true;
+            this.col_inicio.HeaderText = "Inicio";
+            this.col_inicio.MinimumWidth = 6;
+            this.col_inicio.Name = "col_inicio";
+            this.col_inicio.Width = 125;
+            // 
+            // col_fin
+            // 
+            this.col_fin.Frozen = true;
+            this.col_fin.HeaderText = "Fin";
+            this.col_fin.MinimumWidth = 6;
+            this.col_fin.Name = "col_fin";
+            this.col_fin.Width = 125;
+            // 
+            // Check
+            // 
+            this.Check.HeaderText = "Check";
+            this.Check.Name = "Check";
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowUserToResizeColumns = false;
@@ -80,7 +117,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(33, 287);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(656, 160);
+            this.dataGridView2.Size = new System.Drawing.Size(564, 160);
             this.dataGridView2.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -158,43 +195,6 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "ULTIMAS ALARMAS";
             // 
-            // col_prod
-            // 
-            this.col_prod.Frozen = true;
-            this.col_prod.HeaderText = "Productos";
-            this.col_prod.MinimumWidth = 6;
-            this.col_prod.Name = "col_prod";
-            this.col_prod.Width = 125;
-            // 
-            // col_tipo
-            // 
-            this.col_tipo.Frozen = true;
-            this.col_tipo.HeaderText = "Tipo de Alarma";
-            this.col_tipo.MinimumWidth = 6;
-            this.col_tipo.Name = "col_tipo";
-            this.col_tipo.Width = 125;
-            // 
-            // col_inicio
-            // 
-            this.col_inicio.Frozen = true;
-            this.col_inicio.HeaderText = "Inicio";
-            this.col_inicio.MinimumWidth = 6;
-            this.col_inicio.Name = "col_inicio";
-            this.col_inicio.Width = 125;
-            // 
-            // col_fin
-            // 
-            this.col_fin.Frozen = true;
-            this.col_fin.HeaderText = "Fin";
-            this.col_fin.MinimumWidth = 6;
-            this.col_fin.Name = "col_fin";
-            this.col_fin.Width = 125;
-            // 
-            // Check
-            // 
-            this.Check.HeaderText = "Check";
-            this.Check.Name = "Check";
-            // 
             // ActualizaAlarma
             // 
             this.ActualizaAlarma.Location = new System.Drawing.Point(695, 123);
@@ -209,7 +209,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1082, 661);
             this.Controls.Add(this.ActualizaAlarma);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_atras);

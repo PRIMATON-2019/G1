@@ -7,6 +7,11 @@ namespace G1.Formularios
 {
     public partial class Seguimiento : Form
     {
+
+        string riego;
+        string raleo;
+        string fertilizacion;
+        string cosecha;
         public Seguimiento()
         {
             InitializeComponent();
@@ -14,28 +19,56 @@ namespace G1.Formularios
 
         private void BtnAgregarEvento_Click(object sender, EventArgs e)
         {
-            string[] columnas = { "Fecha", "TipoCultivo", "Responsable", "TipoEvento" };
+            Persistencia per = new Persistencia();
+            DataTable dtCultivos = per.BuscarDatos("cultivos");
+            try
+            {
+                for (int j = 0; j < dtCultivos.Rows.Count; j++)
+                {
+                    if (dtCultivos.Rows[j][0].ToString().Equals(cbTipoCultivo.Text))
+                    {
+                        riego = dtCultivos.Rows[j][2].ToString();
+                        raleo = dtCultivos.Rows[j][3].ToString();
+                        fertilizacion = dtCultivos.Rows[j][4].ToString();
+                        cosecha = dtCultivos.Rows[j][5].ToString();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("No se recuperaron los datos del cultivo seleccionado");
+            }
 
-            Persistencia pd = new Persistencia(4, columnas, "eventos");
+            string[] columnas = { "Fecha", "TipoCultivo", "Responsable", "TipoEvento", "Riego", "Raleo", "Fertilización", "Cosecha" };
+
+            Persistencia pd = new Persistencia(8, columnas, "eventos");
             string[] datos = {
                 dtpFechaEvento.Value.ToString(),
                 cbTipoCultivo.Text,
                 cbUsuarios.Text,
-                cbTipoEvento.Text
+                "Siembra", 
+                riego,
+                raleo,
+                fertilizacion,
+                cosecha
             };
-            pd.CargaDatos(datos, 4, columnas);
+
+            pd.CargaDatos(datos, 8, columnas);
 
 
             if (cbAlarmas.Checked)
             {
-                string[] columnas2 = {"TipoCultivo" , "Nombre de alerta", "Fecha alerta","Fin alerta"};
+
+                string[] columnas2 = { "TipoCultivo", "NombreAlerta", "FechaAlerta", "FinAlerta" };
                 Persistencia pd2 = new Persistencia(4, columnas2, "alertas");
                 DateTime DateRiego = new DateTime();
                 DateTime DateRaleo = new DateTime();
                 DateTime DateSiembra = new DateTime();
-                DateRiego = DateTime.Now.AddDays(3);
-                DateRaleo = dtpFechaEvento.Value.AddDays(43);
-                DateSiembra = dtpFechaEvento.Value.AddDays(90);
+                DateTime DateFertilizacion = new DateTime();
+                DateRiego = dtpFechaEvento.Value.AddDays(Convert.ToInt32(riego));
+                DateRaleo = dtpFechaEvento.Value.AddDays(Convert.ToInt32(raleo));
+                DateFertilizacion = dtpFechaEvento.Value.AddDays(Convert.ToInt32(fertilizacion));
+                DateSiembra = dtpFechaEvento.Value.AddDays(Convert.ToInt32(cosecha));
 
                 string[] alarma1 =
                 {
@@ -54,7 +87,7 @@ namespace G1.Formularios
                 string[] alarma3 =
 {
                     cbTipoCultivo.Text,
-                    "Siembra",
+                    "Cosecha",
                     dtpFechaEvento.Value.ToString(),
                     DateSiembra.ToString(),
                 };
@@ -114,13 +147,17 @@ namespace G1.Formularios
                             dsTiposCultivos.Rows[j][0].ToString(),
                             dsTiposCultivos.Rows[j][1].ToString(),
                             dsTiposCultivos.Rows[j][2].ToString(),
-                            dsTiposCultivos.Rows[j][3].ToString()
+                            dsTiposCultivos.Rows[j][3].ToString(),
+                            dsTiposCultivos.Rows[j][4].ToString(),
+                            dsTiposCultivos.Rows[j][5].ToString(),
+                            dsTiposCultivos.Rows[j][6].ToString(),
+                            dsTiposCultivos.Rows[j][7].ToString()
                           );
                 }
             }
             catch (Exception)
             {
-                // MessageBox.Show("No se pueden generar eventos sin antes cargar Cultivos");             
+                Console.WriteLine("No se pueden generar eventos sin antes cargar Cultivos");             
             }
         }
     }

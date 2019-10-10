@@ -64,39 +64,41 @@ namespace G1.Formularios
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.YellowGreen;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnAceptar.ForeColor = System.Drawing.Color.Black;
             this.btnAceptar.Location = new System.Drawing.Point(12, 194);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(135, 41);
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.BackColor = System.Drawing.Color.YellowGreen;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
             this.btnCancelar.Location = new System.Drawing.Point(153, 194);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 41);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // btni18n
             // 
+            this.btni18n.BackColor = System.Drawing.Color.YellowGreen;
             this.btni18n.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btni18n.ForeColor = System.Drawing.Color.DarkSeaGreen;
+            this.btni18n.ForeColor = System.Drawing.Color.Black;
             this.btni18n.Location = new System.Drawing.Point(344, 194);
             this.btni18n.Name = "btni18n";
             this.btni18n.Size = new System.Drawing.Size(135, 41);
             this.btni18n.TabIndex = 4;
             this.btni18n.Text = "English";
-            this.btni18n.UseVisualStyleBackColor = true;
+            this.btni18n.UseVisualStyleBackColor = false;
             this.btni18n.Click += new System.EventHandler(this.BtnI8N_Click);
             // 
             // txtClave

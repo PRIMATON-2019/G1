@@ -1,21 +1,12 @@
-﻿using System;
-using G1.Clases;
-using G1.Clases.Modelos;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using G1.Clases;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace G1.Formularios
 {
     public partial class Alarma : Form
     {
-
-
         public Alarma()
         {
             InitializeComponent();
@@ -28,12 +19,6 @@ namespace G1.Formularios
             menu.Show();
             this.Hide();
         }
-
-        private void Alarma_Load(object sender, EventArgs e)
-        {
-
-        }
-
 
         public void ListarAlertas()
         {
@@ -51,14 +36,14 @@ namespace G1.Formularios
                             dsTiposAlarmas.Rows[j][2].ToString(),
                             dsTiposAlarmas.Rows[j][3].ToString(),
                             false
-                          ) ;
+                          );
                 }
             }
             catch (Exception)
             {
-                 MessageBox.Show("No se pudieron generar las alertas");             
+                MessageBox.Show("No se pudieron generar las alertas");
             }
-	}
+        }
 
 
         private void ActualizaAlarma_Click(object sender, EventArgs e)
@@ -88,9 +73,9 @@ namespace G1.Formularios
         }
 
     }
-    }
+}
 
 
-            
-        
+
+
 

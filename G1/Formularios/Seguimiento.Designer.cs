@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Seguimiento));
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,33 +50,30 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbAlarmas = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbTipoCultivo = new System.Windows.Forms.ComboBox();
             this.cbUsuarios = new System.Windows.Forms.ComboBox();
             this.dtpFechaEvento = new System.Windows.Forms.DateTimePicker();
-            this.cbTipoEvento = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.btnAgregarEvento = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCosecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
@@ -250,36 +246,35 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(865, 439);
+            this.panel5.Size = new System.Drawing.Size(1018, 629);
             this.panel5.TabIndex = 7;
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel6.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.panel6.Controls.Add(this.cbAlarmas);
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Controls.Add(this.cbTipoCultivo);
             this.panel6.Controls.Add(this.cbUsuarios);
             this.panel6.Controls.Add(this.dtpFechaEvento);
-            this.panel6.Controls.Add(this.cbTipoEvento);
             this.panel6.Controls.Add(this.label21);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.label18);
             this.panel6.Controls.Add(this.label19);
-            this.panel6.Controls.Add(this.label20);
             this.panel6.Controls.Add(this.btnAgregarEvento);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(865, 439);
+            this.panel6.Size = new System.Drawing.Size(1018, 629);
             this.panel6.TabIndex = 8;
             // 
             // cbAlarmas
             // 
             this.cbAlarmas.AutoSize = true;
-            this.cbAlarmas.Location = new System.Drawing.Point(643, 12);
+            this.cbAlarmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbAlarmas.Location = new System.Drawing.Point(266, 151);
             this.cbAlarmas.Name = "cbAlarmas";
-            this.cbAlarmas.Size = new System.Drawing.Size(207, 17);
+            this.cbAlarmas.Size = new System.Drawing.Size(348, 28);
             this.cbAlarmas.TabIndex = 20;
             this.cbAlarmas.Text = "¿Desea generar alarmas automaticas?";
             this.cbAlarmas.UseVisualStyleBackColor = true;
@@ -289,44 +284,30 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
-            this.Column4,
             this.Column3,
-            this.Column1});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
+            this.Column1,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column7,
+            this.colCosecha});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 200);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(838, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(992, 417);
             this.dataGridView1.TabIndex = 15;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Fecha";
-            this.Column2.Name = "Column2";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Evento";
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cultivo";
-            this.Column3.Name = "Column3";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Responsable";
-            this.Column1.Name = "Column1";
             // 
             // cbTipoCultivo
             // 
+            this.cbTipoCultivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbTipoCultivo.FormattingEnabled = true;
-            this.cbTipoCultivo.Location = new System.Drawing.Point(218, 68);
+            this.cbTipoCultivo.Location = new System.Drawing.Point(367, 79);
             this.cbTipoCultivo.Name = "cbTipoCultivo";
-            this.cbTipoCultivo.Size = new System.Drawing.Size(171, 21);
+            this.cbTipoCultivo.Size = new System.Drawing.Size(233, 32);
             this.cbTipoCultivo.TabIndex = 18;
             // 
             // cbUsuarios
             // 
+            this.cbUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUsuarios.FormattingEnabled = true;
             this.cbUsuarios.Items.AddRange(new object[] {
             "Siembra",
@@ -335,76 +316,67 @@
             "Cosecha",
             "Raleo",
             "Curación"});
-            this.cbUsuarios.Location = new System.Drawing.Point(395, 68);
+            this.cbUsuarios.Location = new System.Drawing.Point(16, 149);
             this.cbUsuarios.Name = "cbUsuarios";
-            this.cbUsuarios.Size = new System.Drawing.Size(173, 21);
+            this.cbUsuarios.Size = new System.Drawing.Size(224, 32);
             this.cbUsuarios.TabIndex = 19;
             // 
             // dtpFechaEvento
             // 
-            this.dtpFechaEvento.Location = new System.Drawing.Point(12, 69);
+            this.dtpFechaEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaEvento.Location = new System.Drawing.Point(12, 82);
             this.dtpFechaEvento.Name = "dtpFechaEvento";
-            this.dtpFechaEvento.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaEvento.Size = new System.Drawing.Size(349, 29);
             this.dtpFechaEvento.TabIndex = 17;
             // 
-            // cbTipoEvento
+            // label21
             // 
-            this.cbTipoEvento.FormattingEnabled = true;
-            this.cbTipoEvento.Items.AddRange(new object[] {
-            "Siembra",
-            "Riego",
-            "Fertilización",
-            "Cosecha",
-            "Raleo",
-            "Curación"});
-            this.cbTipoEvento.Location = new System.Drawing.Point(574, 68);
-            this.cbTipoEvento.Name = "cbTipoEvento";
-            this.cbTipoEvento.Size = new System.Drawing.Size(135, 21);
-            this.cbTipoEvento.TabIndex = 16;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 12);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(347, 33);
+            this.label21.TabIndex = 9;
+            this.label21.Text = "Seguimiento de cultivos";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(9, 51);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 13);
+            this.label17.Size = new System.Drawing.Size(157, 24);
             this.label17.TabIndex = 9;
             this.label17.Text = "Fecha del evento";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(392, 52);
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(12, 122);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(115, 13);
+            this.label18.Size = new System.Drawing.Size(204, 24);
             this.label18.TabIndex = 10;
             this.label18.Text = "Quien realizo el evento";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(215, 52);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(363, 50);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 13);
+            this.label19.Size = new System.Drawing.Size(136, 24);
             this.label19.TabIndex = 11;
             this.label19.Text = "Tipo de Cultivo";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(574, 51);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 13);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Tipo de evento";
-            // 
             // btnAgregarEvento
             // 
-            this.btnAgregarEvento.Location = new System.Drawing.Point(722, 65);
+            this.btnAgregarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarEvento.Location = new System.Drawing.Point(649, 147);
             this.btnAgregarEvento.Name = "btnAgregarEvento";
-            this.btnAgregarEvento.Size = new System.Drawing.Size(128, 23);
+            this.btnAgregarEvento.Size = new System.Drawing.Size(158, 34);
             this.btnAgregarEvento.TabIndex = 14;
-            this.btnAgregarEvento.Text = "Agregar cultivo";
+            this.btnAgregarEvento.Text = "Agregar evento";
             this.btnAgregarEvento.UseVisualStyleBackColor = true;
             this.btnAgregarEvento.Click += new System.EventHandler(this.BtnAgregarEvento_Click);
             // 
@@ -422,7 +394,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(865, 439);
+            this.panel4.Size = new System.Drawing.Size(1018, 629);
             this.panel4.TabIndex = 5;
             // 
             // panel3
@@ -435,9 +407,9 @@
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.monthCalendar1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(171, 48);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(865, 439);
+            this.panel3.Size = new System.Drawing.Size(1018, 629);
             this.panel3.TabIndex = 6;
             // 
             // label1
@@ -449,53 +421,53 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Lunes";
             // 
-            // pictureBox1
+            // Column2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Column2.HeaderText = "Fecha";
+            this.Column2.Name = "Column2";
             // 
-            // panel2
+            // Column3
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 48);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 439);
-            this.panel2.TabIndex = 5;
+            this.Column3.HeaderText = "Cultivo";
+            this.Column3.Name = "Column3";
             // 
-            // panel1
+            // Column1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chocolate;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 48);
-            this.panel1.TabIndex = 4;
+            this.Column1.HeaderText = "Responsable";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
             // 
-            // label21
+            // Column4
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(6, 12);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(295, 33);
-            this.label21.TabIndex = 9;
-            this.label21.Text = "Cultivos Sembrados";
+            this.Column4.HeaderText = "Evento";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Riego";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Raleo";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Fertilización";
+            this.Column7.Name = "Column7";
+            // 
+            // colCosecha
+            // 
+            this.colCosecha.HeaderText = "Cosecha";
+            this.colCosecha.Name = "colCosecha";
             // 
             // Seguimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 487);
+            this.ClientSize = new System.Drawing.Size(1018, 629);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Name = "Seguimiento";
             this.Text = "Calendario";
             this.Load += new System.EventHandler(this.Seguimiento_Load);
@@ -508,8 +480,6 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -538,24 +508,23 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.ComboBox cbTipoCultivo;
         private System.Windows.Forms.ComboBox cbUsuarios;
         private System.Windows.Forms.DateTimePicker dtpFechaEvento;
-        private System.Windows.Forms.ComboBox cbTipoEvento;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnAgregarEvento;
         private System.Windows.Forms.CheckBox cbAlarmas;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCosecha;
     }
 }

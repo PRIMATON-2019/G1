@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using G1.Clases.Modelos;
+using System;
+using System.Data;
 
 namespace G1.Clases
 {
@@ -7,6 +9,11 @@ namespace G1.Clases
         #region Propiedades
         public DataTable Tabla;
         public string nombreArchivo;
+        
+
+       
+
+
         #endregion
 
         /// <summary>
@@ -18,6 +25,7 @@ namespace G1.Clases
         public Persistencia()
         {
             Tabla = new DataTable();
+           
         }
         public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
