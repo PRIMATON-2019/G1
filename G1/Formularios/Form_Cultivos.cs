@@ -42,6 +42,38 @@ namespace G1.Formularios
             };
             pd.CargaDatos(datos, 7, columnas);
             MessageBox.Show("Cultivo agregado");
+            ListarEventos();
+        }
+
+        private void Form_Cultivos_Load(object sender, EventArgs e)
+        {
+            ListarEventos();
+        }
+
+        public void ListarEventos()
+        {
+            Persistencia pd = new Persistencia();
+            DataTable dsTiposCultivos = pd.BuscarDatos("cultivos");
+            try
+            {
+                dataGridView1.RowCount = 1;
+                for (int j = 0; j < dsTiposCultivos.Rows.Count; j++)
+                {
+                    dataGridView1.Rows.Add(
+
+                            dsTiposCultivos.Rows[j][0].ToString(),
+                            dsTiposCultivos.Rows[j][1].ToString(),
+                            dsTiposCultivos.Rows[j][2].ToString(),
+                            dsTiposCultivos.Rows[j][3].ToString(),
+                            dsTiposCultivos.Rows[j][4].ToString(),
+                            dsTiposCultivos.Rows[j][5].ToString()
+                          );
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Fin de arreglo");
+            }
         }
     }
 }

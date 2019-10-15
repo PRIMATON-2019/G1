@@ -546,6 +546,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "Form_Cultivos";
             this.Text = "Cultivos";
+            this.Load += new System.EventHandler(this.Form_Cultivos_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
