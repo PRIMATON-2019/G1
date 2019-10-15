@@ -41,6 +41,7 @@ namespace G1.Formularios
                 txtDescripción.Text
             };
             pd.CargaDatos(datos, 7, columnas);
+            MessageBox.Show("Cultivo agregado");
         }
     }
 }

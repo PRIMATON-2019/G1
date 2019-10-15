@@ -42,8 +42,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bt_atras = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.ActualizaAlarma = new System.Windows.Forms.Button();
+            this.comboBoxCultivo = new System.Windows.Forms.ComboBox();
+            this.comboBoxAlarma = new System.Windows.Forms.ComboBox();
+            this.btnAgregarAlarma = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -117,7 +119,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(33, 287);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(564, 160);
+            this.dataGridView2.Size = new System.Drawing.Size(656, 160);
             this.dataGridView2.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -183,17 +185,7 @@
             this.bt_atras.Text = "Atras";
             this.bt_atras.UseCompatibleTextRendering = true;
             this.bt_atras.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AccessibleName = "label1";
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(509, 261);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "ULTIMAS ALARMAS";
+            this.bt_atras.Click += new System.EventHandler(this.Bt_atras_Click_1);
             // 
             // ActualizaAlarma
             // 
@@ -205,14 +197,51 @@
             this.ActualizaAlarma.UseVisualStyleBackColor = true;
             this.ActualizaAlarma.Click += new System.EventHandler(this.ActualizaAlarma_Click);
             // 
+            // comboBoxCultivo
+            // 
+            this.comboBoxCultivo.FormattingEnabled = true;
+            this.comboBoxCultivo.Items.AddRange(new object[] {
+            "Manzana",
+            "Pera",
+            "Banana"});
+            this.comboBoxCultivo.Location = new System.Drawing.Point(33, 485);
+            this.comboBoxCultivo.Name = "comboBoxCultivo";
+            this.comboBoxCultivo.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCultivo.TabIndex = 16;
+            // 
+            // comboBoxAlarma
+            // 
+            this.comboBoxAlarma.FormattingEnabled = true;
+            this.comboBoxAlarma.Items.AddRange(new object[] {
+            "Riego",
+            "Fertilización",
+            "Raleo",
+            "Cocecha"});
+            this.comboBoxAlarma.Location = new System.Drawing.Point(193, 485);
+            this.comboBoxAlarma.Name = "comboBoxAlarma";
+            this.comboBoxAlarma.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxAlarma.TabIndex = 17;
+            // 
+            // btnAgregarAlarma
+            // 
+            this.btnAgregarAlarma.Location = new System.Drawing.Point(383, 482);
+            this.btnAgregarAlarma.Name = "btnAgregarAlarma";
+            this.btnAgregarAlarma.Size = new System.Drawing.Size(109, 24);
+            this.btnAgregarAlarma.TabIndex = 18;
+            this.btnAgregarAlarma.Text = "Agregar alarma";
+            this.btnAgregarAlarma.UseVisualStyleBackColor = true;
+            this.btnAgregarAlarma.Click += new System.EventHandler(this.BtnAgregarAlarma_Click);
+            // 
             // Alarma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1082, 661);
+            this.Controls.Add(this.btnAgregarAlarma);
+            this.Controls.Add(this.comboBoxAlarma);
+            this.Controls.Add(this.comboBoxCultivo);
             this.Controls.Add(this.ActualizaAlarma);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.bt_atras);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -220,10 +249,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Alarma";
             this.Text = "Alarma";
+            this.Load += new System.EventHandler(this.Alarma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -237,12 +266,14 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button bt_atras;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_prod;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_tipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_inicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_fin;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Check;
         private System.Windows.Forms.Button ActualizaAlarma;
+        private System.Windows.Forms.ComboBox comboBoxCultivo;
+        private System.Windows.Forms.ComboBox comboBoxAlarma;
+        private System.Windows.Forms.Button btnAgregarAlarma;
     }
 }

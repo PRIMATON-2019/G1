@@ -87,6 +87,14 @@ namespace G1.Formularios
                 string[] alarma3 =
 {
                     cbTipoCultivo.Text,
+                    "Fertilizacion",
+                    dtpFechaEvento.Value.ToString(),
+                    DateFertilizacion.ToString(),
+
+                };
+                string[] alarma4 =
+                {
+                    cbTipoCultivo.Text,
                     "Cosecha",
                     dtpFechaEvento.Value.ToString(),
                     DateSiembra.ToString(),
@@ -95,6 +103,7 @@ namespace G1.Formularios
                 pd2.CargaDatos(alarma1, 4, columnas2);
                 pd2.CargaDatos(alarma2, 4, columnas2);
                 pd2.CargaDatos(alarma3, 4, columnas2);
+                pd2.CargaDatos(alarma4, 4, columnas2);
 
                 MessageBox.Show("Se generaron las alarmas correspondientes");
             }
@@ -102,7 +111,7 @@ namespace G1.Formularios
 
 
         }
-
+        
         private void Seguimiento_Load(object sender, EventArgs e)
         {
             ListarEventos();
@@ -159,5 +168,6 @@ namespace G1.Formularios
                 Console.WriteLine("No se pueden generar eventos sin antes cargar Cultivos");             
             }
         }
+
     }
 }

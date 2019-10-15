@@ -50,6 +50,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbAlarmas = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCosecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cbTipoCultivo = new System.Windows.Forms.ComboBox();
             this.cbUsuarios = new System.Windows.Forms.ComboBox();
             this.dtpFechaEvento = new System.Windows.Forms.DateTimePicker();
@@ -61,14 +69,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCosecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -296,6 +296,47 @@
             this.dataGridView1.Size = new System.Drawing.Size(992, 417);
             this.dataGridView1.TabIndex = 15;
             // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Fecha";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cultivo";
+            this.Column3.Name = "Column3";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Responsable";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Evento";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Riego";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Raleo";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Fertilización";
+            this.Column7.Name = "Column7";
+            // 
+            // colCosecha
+            // 
+            this.colCosecha.HeaderText = "Cosecha";
+            this.colCosecha.Name = "colCosecha";
+            // 
             // cbTipoCultivo
             // 
             this.cbTipoCultivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,6 +345,7 @@
             this.cbTipoCultivo.Name = "cbTipoCultivo";
             this.cbTipoCultivo.Size = new System.Drawing.Size(233, 32);
             this.cbTipoCultivo.TabIndex = 18;
+            //this.cbTipoCultivo.SelectedIndexChanged += new System.EventHandler(this.CbTipoCultivo_SelectedIndexChanged);
             // 
             // cbUsuarios
             // 
@@ -420,47 +462,6 @@
             this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lunes";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Fecha";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cultivo";
-            this.Column3.Name = "Column3";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Responsable";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Evento";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Riego";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Raleo";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Fertilización";
-            this.Column7.Name = "Column7";
-            // 
-            // colCosecha
-            // 
-            this.colCosecha.HeaderText = "Cosecha";
-            this.colCosecha.Name = "colCosecha";
             // 
             // Seguimiento
             // 
