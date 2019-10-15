@@ -124,16 +124,10 @@ namespace G1.Formularios
         {
             DateTime ahora = new DateTime();
             ahora = DateTime.Now;
-            Seguimiento seg = new Seguimiento();
             string[] columnas2 = { "TipoCultivo", "NombreAlerta", "FechaAlerta", "FinAlerta" };
             Persistencia pd2 = new Persistencia(4, columnas2, "alertas");
-            Persistencia pd3 = new Persistencia();
-            DataTable dtCultivos = pd3.BuscarDatos("cultivos");
-
-            //cantidad de dias para agregarle a la alarma segun corresponda
-            int cantidad = CantidadDias(EncuentraCultivo(comboBoxCultivo.SelectedItem.ToString(),dtCultivos),dtCultivos, comboBoxAlarma.SelectedItem.ToString());
-
             DateTime despues = new DateTime();
+            int cantidad = int.Parse(textBoxDias.Text);
             despues = DateTime.Now.AddDays(cantidad);
             string[] alarmanueva =
 {
@@ -164,6 +158,7 @@ namespace G1.Formularios
 
         //Busca en el xml de cultivo el nombre del cultivo y retorna la pocision para ser usada en otro metodo
 
+            /*
         private int EncuentraCultivo(string nombre, DataTable tabla)
         {
             int num = 0;
@@ -211,7 +206,7 @@ namespace G1.Formularios
                 return lugar;
             }
                 return lugar;
-        }
+        }*/
     }
 }
 
