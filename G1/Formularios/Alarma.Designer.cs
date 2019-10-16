@@ -29,7 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.col_prod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.bt_atras = new System.Windows.Forms.Button();
@@ -41,15 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_prod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_inicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,44 @@
             this.dataGridView1.Size = new System.Drawing.Size(666, 203);
             this.dataGridView1.TabIndex = 9;
             // 
+            // col_prod
+            // 
+            this.col_prod.Frozen = true;
+            this.col_prod.HeaderText = "Productos";
+            this.col_prod.MinimumWidth = 6;
+            this.col_prod.Name = "col_prod";
+            this.col_prod.Width = 125;
+            // 
+            // col_tipo
+            // 
+            this.col_tipo.Frozen = true;
+            this.col_tipo.HeaderText = "Tipo de Alarma";
+            this.col_tipo.MinimumWidth = 6;
+            this.col_tipo.Name = "col_tipo";
+            this.col_tipo.Width = 125;
+            // 
+            // col_inicio
+            // 
+            this.col_inicio.Frozen = true;
+            this.col_inicio.HeaderText = "Inicio";
+            this.col_inicio.MinimumWidth = 6;
+            this.col_inicio.Name = "col_inicio";
+            this.col_inicio.Width = 135;
+            // 
+            // col_fin
+            // 
+            this.col_fin.Frozen = true;
+            this.col_fin.HeaderText = "Fin";
+            this.col_fin.MinimumWidth = 6;
+            this.col_fin.Name = "col_fin";
+            this.col_fin.Width = 135;
+            // 
+            // Check
+            // 
+            this.Check.HeaderText = "Check";
+            this.Check.Name = "Check";
+            this.Check.Width = 55;
+            // 
             // dataGridView2
             // 
             this.dataGridView2.AllowDrop = true;
@@ -86,11 +124,39 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(43, 287);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 287);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(614, 160);
+            this.dataGridView2.Size = new System.Drawing.Size(666, 160);
             this.dataGridView2.TabIndex = 10;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Productos";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tipo de Alarma";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Inicio";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 135;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Fin";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 135;
             // 
             // button1
             // 
@@ -210,72 +276,6 @@
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 22;
             this.label3.Text = "Tipo cultivo";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Productos";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tipo de Alarma";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Inicio";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 135;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Fin";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 135;
-            // 
-            // col_prod
-            // 
-            this.col_prod.Frozen = true;
-            this.col_prod.HeaderText = "Productos";
-            this.col_prod.MinimumWidth = 6;
-            this.col_prod.Name = "col_prod";
-            this.col_prod.Width = 125;
-            // 
-            // col_tipo
-            // 
-            this.col_tipo.Frozen = true;
-            this.col_tipo.HeaderText = "Tipo de Alarma";
-            this.col_tipo.MinimumWidth = 6;
-            this.col_tipo.Name = "col_tipo";
-            this.col_tipo.Width = 125;
-            // 
-            // col_inicio
-            // 
-            this.col_inicio.Frozen = true;
-            this.col_inicio.HeaderText = "Inicio";
-            this.col_inicio.MinimumWidth = 6;
-            this.col_inicio.Name = "col_inicio";
-            this.col_inicio.Width = 135;
-            // 
-            // col_fin
-            // 
-            this.col_fin.Frozen = true;
-            this.col_fin.HeaderText = "Fin";
-            this.col_fin.MinimumWidth = 6;
-            this.col_fin.Name = "col_fin";
-            this.col_fin.Width = 135;
-            // 
-            // Check
-            // 
-            this.Check.HeaderText = "Check";
-            this.Check.Name = "Check";
-            this.Check.Width = 55;
             // 
             // Alarma
             // 

@@ -27,6 +27,13 @@ namespace G1.Clases
             Tabla = new DataTable();
            
         }
+
+        public Persistencia(string nombreArchivo)
+        {
+            this.nombreArchivo = nombreArchivo;
+            Tabla = new DataTable();
+
+        }
         public Persistencia(int cantColumnas, string[] columnas, string nombreArchivo)
         {
             this.nombreArchivo = nombreArchivo;

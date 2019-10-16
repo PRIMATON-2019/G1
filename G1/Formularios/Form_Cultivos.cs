@@ -75,5 +75,10 @@ namespace G1.Formularios
                 Console.WriteLine("Fin de arreglo");
             }
         }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

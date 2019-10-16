@@ -106,7 +106,7 @@
             this.btnAgregarEvento.AutoSize = true;
             this.btnAgregarEvento.BackColor = System.Drawing.Color.YellowGreen;
             this.btnAgregarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEvento.Location = new System.Drawing.Point(499, 108);
+            this.btnAgregarEvento.Location = new System.Drawing.Point(641, 113);
             this.btnAgregarEvento.Name = "btnAgregarEvento";
             this.btnAgregarEvento.Size = new System.Drawing.Size(146, 34);
             this.btnAgregarEvento.TabIndex = 14;
@@ -262,38 +262,34 @@
             // txtCosecho
             // 
             this.txtCosecho.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCosecho.Location = new System.Drawing.Point(382, 110);
+            this.txtCosecho.Location = new System.Drawing.Point(382, 113);
             this.txtCosecho.Name = "txtCosecho";
             this.txtCosecho.Size = new System.Drawing.Size(100, 29);
             this.txtCosecho.TabIndex = 21;
-            this.txtCosecho.Text = "90";
             // 
             // txtRaleo
             // 
             this.txtRaleo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRaleo.Location = new System.Drawing.Point(261, 110);
+            this.txtRaleo.Location = new System.Drawing.Point(133, 113);
             this.txtRaleo.Name = "txtRaleo";
             this.txtRaleo.Size = new System.Drawing.Size(100, 29);
             this.txtRaleo.TabIndex = 22;
-            this.txtRaleo.Text = "25";
             // 
             // txtFertilizo
             // 
             this.txtFertilizo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFertilizo.Location = new System.Drawing.Point(140, 110);
+            this.txtFertilizo.Location = new System.Drawing.Point(255, 113);
             this.txtFertilizo.Name = "txtFertilizo";
             this.txtFertilizo.Size = new System.Drawing.Size(100, 29);
             this.txtFertilizo.TabIndex = 23;
-            this.txtFertilizo.Text = "10";
             // 
             // txtRiego
             // 
             this.txtRiego.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRiego.Location = new System.Drawing.Point(19, 110);
+            this.txtRiego.Location = new System.Drawing.Point(19, 113);
             this.txtRiego.Name = "txtRiego";
             this.txtRiego.Size = new System.Drawing.Size(100, 29);
             this.txtRiego.TabIndex = 24;
-            this.txtRiego.Text = "2";
             // 
             // txtNombre
             // 
@@ -302,7 +298,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(322, 29);
             this.txtNombre.TabIndex = 20;
-            this.txtNombre.Text = "Tomates";
             // 
             // dataGridView1
             // 

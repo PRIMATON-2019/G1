@@ -41,23 +41,27 @@ namespace G1.Formularios
 
             string[] columnas = { "Fecha", "TipoCultivo", "Responsable", "TipoEvento", "Riego", "Raleo", "Fertilización", "Cosecha" };
 
+            DateTime FechaRiego = DateTime.Now;
+            DateTime FechaRaleo = DateTime.Now;
+            DateTime FechaFertilizacion = DateTime.Now;
+            DateTime FechaCosecha = DateTime.Now;
+
             Persistencia pd = new Persistencia(8, columnas, "eventos");
             string[] datos = {
                 dtpFechaEvento.Value.ToString(),
                 cbTipoCultivo.Text,
                 cbUsuarios.Text,
-                "Siembra", 
-                riego,
-                raleo,
-                fertilizacion,
-                cosecha
+                "Siembra",
+                FechaRiego.AddDays(Convert.ToDouble(riego)).ToShortDateString(),
+                FechaRaleo.AddDays(Convert.ToDouble(raleo)).ToShortDateString(),
+                FechaFertilizacion.AddDays(Convert.ToDouble(fertilizacion)).ToShortDateString(),
+                FechaCosecha.AddDays(Convert.ToDouble(cosecha)).ToShortDateString()
             };
 
             pd.CargaDatos(datos, 8, columnas);
 
 
-            if (cbAlarmas.Checked)
-            {
+            
 
                 string[] columnas2 = { "TipoCultivo", "NombreAlerta", "FechaAlerta", "FinAlerta" };
                 Persistencia pd2 = new Persistencia(4, columnas2, "alertas");
@@ -106,7 +110,7 @@ namespace G1.Formularios
                 pd2.CargaDatos(alarma4, 4, columnas2);
 
                 MessageBox.Show("Se generaron las alarmas correspondientes");
-            }
+            
             ListarEventos();
 
 

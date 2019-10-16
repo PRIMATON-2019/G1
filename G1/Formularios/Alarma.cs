@@ -7,7 +7,6 @@ namespace G1.Formularios
 {
     public partial class Alarma : Form
     {
-        Boolean bandera = false;
         public Alarma()
         {
             InitializeComponent();
@@ -64,50 +63,33 @@ namespace G1.Formularios
         private void ActualizaAlarma_Click(object sender, EventArgs e)
         {
             AlarmasViejas();
-            bandera = true;
-
         }
 
         public void AlarmasViejas()
         {
 
-            
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 bool check = (bool)dataGridView1.Rows[i].Cells[4].Value;
 
                 if (check == true)
                 {
-                    string[] alarmaVieja = {dataGridView1.Rows[i].Cells[0].Value.ToString(),
-                    dataGridView1.Rows[i].Cells[1].Value.ToString(),
-                    dataGridView1.Rows[i].Cells[2].Value.ToString(),
-                    dataGridView1.Rows[i].Cells[3].Value.ToString() };
-                    string[] columnas2 = { "TipoCultivo", "NombreAlerta", "FechaAlerta", "FinAlerta" };
-                    Persistencia pdviejo = new Persistencia(4, columnas2,"alertasViejas");
-                    pdviejo.CargaDatos(alarmaVieja, 4, columnas2);
-                    Persistencia pd = new Persistencia();
-                    DataTable dsTiposAlarmasVieja = pd.BuscarDatos("alertasViejas");
-                    try
-                    {
-                        //dataGridView1.RowCount = 1;
-                        for (int j = 0; j < dsTiposAlarmasVieja.Rows.Count; j++)
-                        {
-                            dataGridView2.Rows.Add(
+                    string[] alarmaVieja = {
+                        dataGridView1.Rows[i].Cells[0].Value.ToString(),
+                        dataGridView1.Rows[i].Cells[1].Value.ToString(),
+                        dataGridView1.Rows[i].Cells[2].Value.ToString(),
+                        dataGridView1.Rows[i].Cells[3].Value.ToString() };
 
-                                    dsTiposAlarmasVieja.Rows[j][0].ToString(),
-                                    dsTiposAlarmasVieja.Rows[j][1].ToString(),
-                                    dsTiposAlarmasVieja.Rows[j][2].ToString(),
-                                    dsTiposAlarmasVieja.Rows[j][3].ToString()
-                                  );
-                        }
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("No hay alarmas viejas");
-                    }
+                        dataGridView2.Rows.Add(alarmaVieja);
+                        dataGridView1.Rows.RemoveAt(i);
+
+                    string[] columnas2 = { "TipoCultivo", "NombreAlerta", "FechaAlerta", "FinAlerta" };
+                    Persistencia pdviejo = new Persistencia(4, columnas2, "alertasViejas");
+                    pdviejo.CargaDatos(alarmaVieja, 4, columnas2);
+                    Persistencia pd = new Persistencia("alertas");
                     DataTable borraAlarma = pd.BuscarDatos("alertas");
                     borraAlarma.Rows.RemoveAt(i);
-                    dataGridView1.Rows.RemoveAt(i);
+                    pd.GrabarArchivo();
                 }
             }
 
@@ -130,7 +112,7 @@ namespace G1.Formularios
             int cantidad = int.Parse(textBoxDias.Text);
             despues = DateTime.Now.AddDays(cantidad);
             string[] alarmanueva =
-{
+                {
                     comboBoxCultivo.SelectedItem.ToString(),
                     comboBoxAlarma.SelectedItem.ToString(),
                     ahora.ToString(),
@@ -153,60 +135,59 @@ namespace G1.Formularios
                     comboBoxCultivo.Items.Add(ds.Rows[j][0].ToString());
                 }
             }
-
         }
 
         //Busca en el xml de cultivo el nombre del cultivo y retorna la pocision para ser usada en otro metodo
 
-            /*
-        private int EncuentraCultivo(string nombre, DataTable tabla)
+        /*
+    private int EncuentraCultivo(string nombre, DataTable tabla)
+    {
+        int num = 0;
+        for (int i = 0; i < tabla.Rows.Count; i++)
         {
-            int num = 0;
-            for (int i = 0; i < tabla.Rows.Count; i++)
+            if (nombre.Equals(tabla.Rows[i][0]))
             {
-                if (nombre.Equals(tabla.Rows[i][0]))
-                {
-                    num = i;
-                }
+                num = i;
             }
-            return num;
         }
+        return num;
+    }
 
-        // Busca en el xml de cultivos la cantidad de dias segun el tipo de alerta elegido
+    // Busca en el xml de cultivos la cantidad de dias segun el tipo de alerta elegido
 
-        private int CantidadDias(int num, DataTable tabla, string Tipoalerta)
+    private int CantidadDias(int num, DataTable tabla, string Tipoalerta)
+    {
+        int num2 = lugarTabla(tabla, Tipoalerta);
+        String pepe = tabla.Rows[num][num2].ToString();
+        int dias = int.Parse(pepe);
+        return dias;
+    }
+
+    //Busca en el xml de cultivos la pocision del tipo de alerta "raleo" , "riego, "cocecha", "siembra",
+    //para luego ser usada para obtener la cantidad de dias
+    //para mi el error esta aca ya que creo que no estoy buscando en los nombres de las columnas sino
+    //adentro de la misma tabla
+
+    private int lugarTabla(DataTable tabla, string Tipoalerta)
+    {
+        int lugar = 0;
+        if (tabla.Rows[0][3].ToString().Equals(Tipoalerta))
         {
-            int num2 = lugarTabla(tabla, Tipoalerta);
-            String pepe = tabla.Rows[num][num2].ToString();
-            int dias = int.Parse(pepe);
-            return dias;
+            lugar = 3;
+            return lugar;
         }
-
-        //Busca en el xml de cultivos la pocision del tipo de alerta "raleo" , "riego, "cocecha", "siembra",
-        //para luego ser usada para obtener la cantidad de dias
-        //para mi el error esta aca ya que creo que no estoy buscando en los nombres de las columnas sino
-        //adentro de la misma tabla
-
-        private int lugarTabla(DataTable tabla, string Tipoalerta)
+        if (tabla.Rows[0][4].ToString().Equals(Tipoalerta))
         {
-            int lugar = 0;
-            if (tabla.Rows[0][3].ToString().Equals(Tipoalerta))
-            {
-                lugar = 3;
-                return lugar;
-            }
-            if (tabla.Rows[0][4].ToString().Equals(Tipoalerta))
-            {
-                lugar = 4;
-                return lugar;
-            }
-            if (tabla.Rows[0][5].ToString().Equals(Tipoalerta))
-            {
-                lugar = 5;
-                return lugar;
-            }
-                return lugar;
-        }*/
+            lugar = 4;
+            return lugar;
+        }
+        if (tabla.Rows[0][5].ToString().Equals(Tipoalerta))
+        {
+            lugar = 5;
+            return lugar;
+        }
+            return lugar;
+    }*/
     }
 }
 

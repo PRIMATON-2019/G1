@@ -48,7 +48,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cbAlarmas = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -252,7 +251,6 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.panel6.Controls.Add(this.cbAlarmas);
             this.panel6.Controls.Add(this.dataGridView1);
             this.panel6.Controls.Add(this.cbTipoCultivo);
             this.panel6.Controls.Add(this.cbUsuarios);
@@ -268,17 +266,6 @@
             this.panel6.Size = new System.Drawing.Size(1018, 629);
             this.panel6.TabIndex = 8;
             // 
-            // cbAlarmas
-            // 
-            this.cbAlarmas.AutoSize = true;
-            this.cbAlarmas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbAlarmas.Location = new System.Drawing.Point(266, 151);
-            this.cbAlarmas.Name = "cbAlarmas";
-            this.cbAlarmas.Size = new System.Drawing.Size(348, 28);
-            this.cbAlarmas.TabIndex = 20;
-            this.cbAlarmas.Text = "¿Desea generar alarmas automaticas?";
-            this.cbAlarmas.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -291,9 +278,9 @@
             this.Column6,
             this.Column7,
             this.colCosecha});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 200);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 117);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(992, 417);
+            this.dataGridView1.Size = new System.Drawing.Size(992, 500);
             this.dataGridView1.TabIndex = 15;
             // 
             // Column2
@@ -345,7 +332,6 @@
             this.cbTipoCultivo.Name = "cbTipoCultivo";
             this.cbTipoCultivo.Size = new System.Drawing.Size(233, 32);
             this.cbTipoCultivo.TabIndex = 18;
-            //this.cbTipoCultivo.SelectedIndexChanged += new System.EventHandler(this.CbTipoCultivo_SelectedIndexChanged);
             // 
             // cbUsuarios
             // 
@@ -358,7 +344,7 @@
             "Cosecha",
             "Raleo",
             "Curación"});
-            this.cbUsuarios.Location = new System.Drawing.Point(16, 149);
+            this.cbUsuarios.Location = new System.Drawing.Point(606, 78);
             this.cbUsuarios.Name = "cbUsuarios";
             this.cbUsuarios.Size = new System.Drawing.Size(224, 32);
             this.cbUsuarios.TabIndex = 19;
@@ -395,7 +381,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(12, 122);
+            this.label18.Location = new System.Drawing.Point(606, 51);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(204, 24);
             this.label18.TabIndex = 10;
@@ -407,14 +393,14 @@
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(363, 50);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(136, 24);
+            this.label19.Size = new System.Drawing.Size(66, 24);
             this.label19.TabIndex = 11;
-            this.label19.Text = "Tipo de Cultivo";
+            this.label19.Text = "Cultivo";
             // 
             // btnAgregarEvento
             // 
             this.btnAgregarEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEvento.Location = new System.Drawing.Point(649, 147);
+            this.btnAgregarEvento.Location = new System.Drawing.Point(846, 77);
             this.btnAgregarEvento.Name = "btnAgregarEvento";
             this.btnAgregarEvento.Size = new System.Drawing.Size(158, 34);
             this.btnAgregarEvento.TabIndex = 14;
@@ -470,7 +456,7 @@
             this.ClientSize = new System.Drawing.Size(1018, 629);
             this.Controls.Add(this.panel3);
             this.Name = "Seguimiento";
-            this.Text = "Calendario";
+            this.Text = "Seguimiento de Cultivos";
             this.Load += new System.EventHandler(this.Seguimiento_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -517,7 +503,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button btnAgregarEvento;
-        private System.Windows.Forms.CheckBox cbAlarmas;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
