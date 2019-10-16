@@ -187,7 +187,7 @@
             this.comboBox1.Location = new System.Drawing.Point(346, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(299, 32);
-            this.comboBox1.TabIndex = 30;
+            this.comboBox1.TabIndex = 2;
             // 
             // txtDescripción
             // 
@@ -265,7 +265,7 @@
             this.txtCosecho.Location = new System.Drawing.Point(382, 113);
             this.txtCosecho.Name = "txtCosecho";
             this.txtCosecho.Size = new System.Drawing.Size(100, 29);
-            this.txtCosecho.TabIndex = 21;
+            this.txtCosecho.TabIndex = 6;
             // 
             // txtRaleo
             // 
@@ -273,7 +273,7 @@
             this.txtRaleo.Location = new System.Drawing.Point(133, 113);
             this.txtRaleo.Name = "txtRaleo";
             this.txtRaleo.Size = new System.Drawing.Size(100, 29);
-            this.txtRaleo.TabIndex = 22;
+            this.txtRaleo.TabIndex = 4;
             // 
             // txtFertilizo
             // 
@@ -281,7 +281,7 @@
             this.txtFertilizo.Location = new System.Drawing.Point(255, 113);
             this.txtFertilizo.Name = "txtFertilizo";
             this.txtFertilizo.Size = new System.Drawing.Size(100, 29);
-            this.txtFertilizo.TabIndex = 23;
+            this.txtFertilizo.TabIndex = 5;
             // 
             // txtRiego
             // 
@@ -289,7 +289,7 @@
             this.txtRiego.Location = new System.Drawing.Point(19, 113);
             this.txtRiego.Name = "txtRiego";
             this.txtRiego.Size = new System.Drawing.Size(100, 29);
-            this.txtRiego.TabIndex = 24;
+            this.txtRiego.TabIndex = 3;
             // 
             // txtNombre
             // 
@@ -297,7 +297,7 @@
             this.txtNombre.Location = new System.Drawing.Point(16, 38);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(322, 29);
-            this.txtNombre.TabIndex = 20;
+            this.txtNombre.TabIndex = 1;
             // 
             // dataGridView1
             // 
