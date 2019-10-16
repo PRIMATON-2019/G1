@@ -10,7 +10,6 @@ namespace G1.Formularios
         public Alarma()
         {
             InitializeComponent();
-            ListarAlertas();
         }
 
         public void ListarAlertas()
@@ -36,28 +35,6 @@ namespace G1.Formularios
             {
                 MessageBox.Show("No se pudieron generar las alertas");
             }
-            Persistencia pd2 = new Persistencia();
-            DataTable tableAlarmasViejas = pd2.BuscarDatos("alertasViejas");
-            try
-            {
-                dataGridView2.RowCount = 1;
-                for (int j = 0; j < dsTiposAlarmas.Rows.Count; j++)
-                {
-                    dataGridView2.Rows.Add(
-
-                            tableAlarmasViejas.Rows[j][0].ToString(),
-                            tableAlarmasViejas.Rows[j][1].ToString(),
-                            tableAlarmasViejas.Rows[j][2].ToString(),
-                            tableAlarmasViejas.Rows[j][3].ToString()
-                          );
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("No hay alarmas viejas");
-            }
-
-
         }
 
         private void ActualizaAlarma_Click(object sender, EventArgs e)
@@ -125,6 +102,26 @@ namespace G1.Formularios
         private void Alarma_Load(object sender, EventArgs e)
         {
             ListarAlertas();
+
+            Persistencia pd2 = new Persistencia();
+            DataTable tableAlarmasViejas = pd2.BuscarDatos("alertasViejas");          
+                dataGridView2.RowCount = 1;
+            if (tableAlarmasViejas != null)
+            {
+
+
+                for (int j = 0; j < tableAlarmasViejas.Rows.Count; j++)
+                {
+                    dataGridView2.Rows.Add(
+
+                            tableAlarmasViejas.Rows[j][0].ToString(),
+                            tableAlarmasViejas.Rows[j][1].ToString(),
+                            tableAlarmasViejas.Rows[j][2].ToString(),
+                            tableAlarmasViejas.Rows[j][3].ToString()
+                          );
+                }
+            }
+
             Persistencia pd = new Persistencia();
             DataTable ds = pd.BuscarDatos("cultivos");
             comboBoxCultivo.Items.Clear();
@@ -136,58 +133,6 @@ namespace G1.Formularios
                 }
             }
         }
-
-        //Busca en el xml de cultivo el nombre del cultivo y retorna la pocision para ser usada en otro metodo
-
-        /*
-    private int EncuentraCultivo(string nombre, DataTable tabla)
-    {
-        int num = 0;
-        for (int i = 0; i < tabla.Rows.Count; i++)
-        {
-            if (nombre.Equals(tabla.Rows[i][0]))
-            {
-                num = i;
-            }
-        }
-        return num;
-    }
-
-    // Busca en el xml de cultivos la cantidad de dias segun el tipo de alerta elegido
-
-    private int CantidadDias(int num, DataTable tabla, string Tipoalerta)
-    {
-        int num2 = lugarTabla(tabla, Tipoalerta);
-        String pepe = tabla.Rows[num][num2].ToString();
-        int dias = int.Parse(pepe);
-        return dias;
-    }
-
-    //Busca en el xml de cultivos la pocision del tipo de alerta "raleo" , "riego, "cocecha", "siembra",
-    //para luego ser usada para obtener la cantidad de dias
-    //para mi el error esta aca ya que creo que no estoy buscando en los nombres de las columnas sino
-    //adentro de la misma tabla
-
-    private int lugarTabla(DataTable tabla, string Tipoalerta)
-    {
-        int lugar = 0;
-        if (tabla.Rows[0][3].ToString().Equals(Tipoalerta))
-        {
-            lugar = 3;
-            return lugar;
-        }
-        if (tabla.Rows[0][4].ToString().Equals(Tipoalerta))
-        {
-            lugar = 4;
-            return lugar;
-        }
-        if (tabla.Rows[0][5].ToString().Equals(Tipoalerta))
-        {
-            lugar = 5;
-            return lugar;
-        }
-            return lugar;
-    }*/
     }
 }
 
